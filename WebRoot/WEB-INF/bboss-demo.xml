@@ -15,7 +15,7 @@ bboss-demo.xml
 			<property f:name="index" f:cnname="首页"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/demo/SiteDemoController.java" />
+					value="src/org/frameworkset/web/demo/SiteDemoController.java" />
 				<property name="configFile" value="WEB-INF/bboss-demo.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -46,11 +46,11 @@ bboss-demo.xml
 
 				<property name="beanClass">
 					<list componentType="String">
-						<property value="test/org/frameworkset/web/demo/FormUrl.java" />
-						<property value="test/org/frameworkset/web/demo/SiteDemoBean.java" />
-						<property value="test/org/frameworkset/web/demo/DemoContentCache.java" />
-						<property value="test/org/frameworkset/web/demo/DemoUtil.java" />
-						<property value="test/org/frameworkset/web/demo/bboss-demo.xml" />
+						<property value="src/org/frameworkset/web/demo/FormUrl.java" />
+						<property value="src/org/frameworkset/web/demo/SiteDemoBean.java" />
+						<property value="src/org/frameworkset/web/demo/DemoContentCache.java" />
+						<property value="src/org/frameworkset/web/demo/DemoUtil.java" />
+						<property value="src/org/frameworkset/web/demo/bboss-demo.xml" />
 						
 					</list>
 				</property>
@@ -66,7 +66,7 @@ bboss-demo.xml
 			<property f:name="monitor" f:cnname="bbossgroups监控"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/spi/monitor/MonitorController.java" />
+					value="src/org/frameworkset/spi/monitor/MonitorController.java" />
 				<property name="configFile" value="WEB-INF/bboss-monitor.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -94,7 +94,7 @@ bboss-demo.xml
 			<property f:name="download" f:cnname="源码和文档下载"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/fileupload/FileController.java" />
+					value="src/org/frameworkset/web/fileupload/FileController.java" />
 				<property name="configFile" value="WEB-INF/bboss-files.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -123,7 +123,7 @@ bboss-demo.xml
 			<property f:name="databindexamples" f:cnname="数据绑定实例"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/mvc/HelloWord.java" />
+					value="src/org/frameworkset/mvc/HelloWord.java" />
 				<property name="configFile" value="WEB-INF/bboss-helloworld.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -152,7 +152,7 @@ bboss-demo.xml
 			<property f:name="listbean" f:cnname="List集合po对象绑定实例"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/spi/mvc/ListBeanBindController.java" />
+					value="src/org/frameworkset/spi/mvc/ListBeanBindController.java" />
 				<property name="configFile" value="WEB-INF/bboss-listbean.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -188,7 +188,7 @@ bboss-demo.xml
 
 				<property name="beanClass">
 					<list componentType="String">
-						<property value="test/org/frameworkset/spi/mvc/ListBean.java" />
+						<property value="src/org/frameworkset/spi/mvc/ListBean.java" />
 					</list>
 				</property>
 
@@ -200,7 +200,7 @@ bboss-demo.xml
 			<property f:name="mapbean" f:cnname="Map集合po对象绑定实例"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/spi/mvc/MapBindController.java" />
+					value="src/org/frameworkset/spi/mvc/MapBindController.java" />
 				<property name="configFile" value="WEB-INF/bboss-mapbean.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -236,7 +236,7 @@ bboss-demo.xml
 
 				<property name="beanClass">
 					<list componentType="String">
-						<property value="test/org/frameworkset/spi/mvc/ListBean.java" />
+						<property value="src/org/frameworkset/spi/mvc/ListBean.java" />
 					</list>
 				</property>
 
@@ -248,7 +248,7 @@ bboss-demo.xml
 			<property f:name="pathaliaslistbean" f:cnname="路径别名映射机制集合po对象绑定实例"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/spi/mvc/PathController.java" />
+					value="src/org/frameworkset/spi/mvc/PathController.java" />
 				<property name="configFile" value="WEB-INF/bboss-path.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -284,7 +284,7 @@ bboss-demo.xml
 
 				<property name="beanClass">
 					<list componentType="String">
-						<property value="test/org/frameworkset/spi/mvc/ListBean.java" />
+						<property value="src/org/frameworkset/spi/mvc/ListBean.java" />
 					</list>
 				</property>
 
@@ -297,7 +297,7 @@ bboss-demo.xml
 			<property f:name="muti" f:cnname="Jquery实现多文件上传"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/spi/mvc/DemoMutiActionController.java" />
+					value="src/org/frameworkset/spi/mvc/DemoMutiActionController.java" />
 				<property name="configFile" value="WEB-INF/bboss-control.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -332,7 +332,7 @@ bboss-demo.xml
 			<property f:name="swfupload" f:cnname="swfupload实现多文件上传"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/fileupload/FileController.java" />
+					value="src/org/frameworkset/web/fileupload/FileController.java" />
 				<property name="configFile" value="WEB-INF/bboss-files.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -355,7 +355,7 @@ bboss-demo.xml
 
 				<property name="beanClass">
 					<list componentType="String">
-						<property value="test/org/frameworkset/web/fileupload/UpFile.java" />
+						<property value="src/org/frameworkset/web/fileupload/UpFile.java" />
 					</list>
 				</property>
 
@@ -369,7 +369,7 @@ bboss-demo.xml
 			<property f:name="userinfo" f:cnname="用户信息增删改查"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/demo/UserController.java" />
+					value="src/org/frameworkset/web/demo/UserController.java" />
 				<property name="configFile" value="WEB-INF/bboss-user.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -403,8 +403,8 @@ bboss-demo.xml
 
 				<property name="beanClass">
 					<list componentType="String">
-						<property value="test/org/frameworkset/web/demo/User.java" />
-						<property value="test/org/frameworkset/web/demo/UserService.java" />
+						<property value="src/org/frameworkset/web/demo/User.java" />
+						<property value="src/org/frameworkset/web/demo/UserService.java" />
 					</list>
 				</property>
 
@@ -417,7 +417,7 @@ bboss-demo.xml
 			<property f:name="rss" f:cnname="rss控制器"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/http/converter/feed/RSSController.java" />
+					value="src/org/frameworkset/web/http/converter/feed/RSSController.java" />
 				<property name="configFile" value="WEB-INF/bboss-rss.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -431,7 +431,7 @@ bboss-demo.xml
 				<property name="formlist">
 					<list componentType="bean">
 						<property
-							f:formPath="test/org/frameworkset/web/http/converter/feed/RSSController.java"
+							f:formPath="src/org/frameworkset/web/http/converter/feed/RSSController.java"
 							f:charset="UTF-8" class="org.frameworkset.web.demo.FormUrl">
 							<property name="description"><![CDATA[
 								rss, 对应于/rss/rss.html跳转页面 
@@ -448,7 +448,7 @@ bboss-demo.xml
 			<property f:name="json" f:cnname="flexigrid组件的应用"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/http/converter/json/JsonController.java" />
+					value="src/org/frameworkset/web/http/converter/json/JsonController.java" />
 				<property name="configFile" value="WEB-INF/bboss-json.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -472,7 +472,7 @@ bboss-demo.xml
 				<property name="beanClass">
 					<list componentType="String">
 						<property
-							value="test/org/frameworkset/spi/annotations/domain/Person.java" />
+							value="src/org/frameworkset/spi/annotations/domain/Person.java" />
 					</list>
 				</property>
 
@@ -485,7 +485,7 @@ bboss-demo.xml
 			<property f:name="pagin" f:cnname="分页展示数据"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/spi/mvc/PaginController.java" />
+					value="src/org/frameworkset/spi/mvc/PaginController.java" />
 				<property name="configFile" value="WEB-INF/bboss-pagerdemo.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -514,7 +514,7 @@ bboss-demo.xml
 			<property f:name="jquerypagin" f:cnname="利用Jquery分页展示数据"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/jquerypagine/JqueryPagineController.java" />
+					value="src/org/frameworkset/web/jquerypagine/JqueryPagineController.java" />
 				<property name="configFile" value="WEB-INF/bboss-jquerypagine.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -563,7 +563,7 @@ bboss-demo.xml
 				<property name="beanClass">
 					<list componentType="String">
 						<property
-							value="test/org/frameworkset/web/jquerypagine/UserBean.java" />
+							value="src/org/frameworkset/web/jquerypagine/UserBean.java" />
 					</list>
 				</property>
 				<property name="description"><![CDATA[
@@ -575,7 +575,7 @@ bboss-demo.xml
 			<property f:name="tree" f:cnname="树目录展示"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/tree/TreeController.java" />
+					value="src/org/frameworkset/web/tree/TreeController.java" />
 				<property name="configFile" value="WEB-INF/bboss-tree.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="beanClassCharset" value="UTF-8"></property>
@@ -624,7 +624,7 @@ bboss-demo.xml
 				<property name="beanClass">
 					<list componentType="String">
 						<property
-							value="test/org/frameworkset/web/tree/TreeWithContextMenu1.java" />
+							value="src/org/frameworkset/web/tree/TreeWithContextMenu1.java" />
 					</list>
 				</property>
 
@@ -636,7 +636,7 @@ bboss-demo.xml
 			<property f:name="exjsdemo-desktop" f:cnname="exjsdemo-desktop简单的demo"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/desktop/DesktopController.java" />
+					value="src/org/frameworkset/web/desktop/DesktopController.java" />
 				<property name="configFile" value="WEB-INF/bboss-desktop.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -672,7 +672,7 @@ bboss-demo.xml
 			<property f:name="user" f:cnname="用户信息crud"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/spi/annotations/controller/UserInfoController.java" />
+					value="src/org/frameworkset/spi/annotations/controller/UserInfoController.java" />
 				<property name="configFile" value="WEB-INF/bboss-restful.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -697,7 +697,7 @@ bboss-demo.xml
 				<property name="beanClass">
 					<list componentType="String">
 						<property
-							value="test/org/frameworkset/spi/annotations/domain/Person.java" />
+							value="src/org/frameworkset/spi/annotations/domain/Person.java" />
 					</list>
 				</property>
 
@@ -708,7 +708,7 @@ bboss-demo.xml
 			<property f:name="restfulloginnamequery" f:cnname="restful风格用户名查询"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/restful/LoginNameQuery.java" />
+					value="src/org/frameworkset/web/restful/LoginNameQuery.java" />
 				<property name="configFile" value="WEB-INF/bboss-loginnamequery.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -737,7 +737,7 @@ bboss-demo.xml
 			<property f:name="image" f:cnname="图片校验码"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/spi/validator/ImageValidatorController.java" />
+					value="src/org/frameworkset/web/spi/validator/ImageValidatorController.java" />
 				<property name="configFile" value="WEB-INF/bboss-restful.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -761,7 +761,7 @@ bboss-demo.xml
 				<property name="beanClass">
 					<list componentType="String">
 						<property
-							value="test/org/frameworkset/web/spi/validator/RandImgCreater.java" />
+							value="src/org/frameworkset/web/spi/validator/RandImgCreater.java" />
 					</list>
 				</property>
 
@@ -774,7 +774,7 @@ bboss-demo.xml
 			<property f:name="jfreechart" f:cnname="bboss-mvc实现JfreeChart热点map"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/jfreechart/JfreeChartController.java" />
+					value="src/org/frameworkset/web/jfreechart/JfreeChartController.java" />
 				<property name="configFile" value="WEB-INF/bboss-jfreechart.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -803,7 +803,7 @@ bboss-demo.xml
 			<property f:name="date" f:cnname="datepicker控件的应用"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/datepicker/DatePickerController.java" />
+					value="src/org/frameworkset/web/datepicker/DatePickerController.java" />
 				<property name="configFile" value="WEB-INF/bboss-datepicker.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -832,7 +832,7 @@ bboss-demo.xml
 			<property f:name="enumdemo" f:cnname="字符串向枚举类型转换、字符串数组向枚举类型数组转换demo"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/enumtest/EnumConvertController.java" />
+					value="src/org/frameworkset/web/enumtest/EnumConvertController.java" />
 				<property name="configFile" value="WEB-INF/bboss-enum.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -845,7 +845,7 @@ bboss-demo.xml
 				<property name="beanClass">
 					<list componentType="String">
 						<property
-							value="test/org/frameworkset/web/enumtest/SexType.java" />
+							value="src/org/frameworkset/web/enumtest/SexType.java" />
 					</list>
 				</property>
 				<property name="formlist">
@@ -866,7 +866,7 @@ bboss-demo.xml
 			<property f:name="dateconvert" f:cnname="日期类型数据绑定实例"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/date/DateConvertController.java" />
+					value="src/org/frameworkset/web/date/DateConvertController.java" />
 				<property name="configFile" value="WEB-INF/bboss-dateconvert.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -902,7 +902,7 @@ bboss-demo.xml
 			<property f:name="default" f:cnname="默认页面"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/spi/mvc/DemoController.java" />
+					value="src/org/frameworkset/spi/mvc/DemoController.java" />
 				<property name="configFile" value="WEB-INF/bboss-control.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -931,7 +931,7 @@ bboss-demo.xml
 			<property f:name="search" f:cnname="全文检索"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/search/SearchController.java" />
+					value="src/org/frameworkset/web/search/SearchController.java" />
 				<property name="configFile" value="WEB-INF/bboss-control.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -1000,7 +1000,7 @@ bboss-demo.xml
 			<property f:name="portal-jquery" f:cnname="jquery easyui portal 实例"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/portal/PortalController.java" />
+					value="src/org/frameworkset/web/portal/PortalController.java" />
 				<property name="configFile" value="WEB-INF/conf/bboss-portal.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>
@@ -1027,9 +1027,9 @@ bboss-demo.xml
 				<property name="beanClass">
 					<list componentType="String">
 						<property
-							value="test/org/frameworkset/web/portal/GouWuChe.java" />
+							value="src/org/frameworkset/web/portal/GouWuChe.java" />
 						<property
-							value="test/org/frameworkset/web/portal/Productor.java" />
+							value="src/org/frameworkset/web/portal/Productor.java" />
 					</list>
 				</property>
 				<property name="description"><![CDATA[
@@ -1041,7 +1041,7 @@ bboss-demo.xml
 			<property f:name="tagdemo-map" f:cnname="tagdemo-map 实例"
 				class="org.frameworkset.web.demo.SiteDemoBean">
 				<property name="controllerClass"
-					value="test/org/frameworkset/web/tagdemo/Map2ndConverTagController.java" />
+					value="src/org/frameworkset/web/tagdemo/Map2ndConverTagController.java" />
 				<property name="configFile" value="WEB-INF/conf/bboss-maptag.xml" />
 				<property name="controllerClassCharset" value="UTF-8"></property>
 				<property name="configFileCharset" value="UTF-8"></property>

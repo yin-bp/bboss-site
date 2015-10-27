@@ -15,16 +15,8 @@
  */
 package org.frameworkset.web.demo;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
+import org.frameworkset.cache.FileContentCache;
 import org.frameworkset.spi.DisposableBean;
-
-import com.frameworkset.util.DaemonThread;
-import com.frameworkset.util.FileUtil;
-import com.frameworkset.util.ResourceInitial;
-import com.frameworkset.util.StringUtil;
 
 
 /**
@@ -39,102 +31,44 @@ import com.frameworkset.util.StringUtil;
  */
 public class DemoContentCache implements org.frameworkset.spi.InitializingBean,DisposableBean
 {
-	private Map<String,String> democontentCache = new HashMap<String,String>();	
-	private String getFileContent_(String path,String charset,boolean convertHtmlTag)
-	{
-		String content = "";
-		try
-		{
-			if(convertHtmlTag)
-				content = StringUtil.HTMLNoBREncode(FileUtil.getFileContent(path,charset));
-			else
-				content = FileUtil.getFileContent(path,charset);
-		}
-		catch (IOException e)
-		{
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return content;
-	}
-	
-	private Object lock = new Object();
-	public String getFileContent(String path,String charset,boolean convertHtmlTag)
-	{
-		
-		String key = path + "|" + charset + "|" + convertHtmlTag;
-		String content = democontentCache.get(key);
-		if(content != null)
-			return content;
-		else
-		{
-			synchronized(lock)
-			{
-				content = democontentCache.get(key);
-				if(content != null)
-					return content;
-				content = getFileContent_(path,charset,convertHtmlTag);
-				democontentCache.put(key, content);
-				damon.addFile(path, new ResourceCacheRefresh(key ));
-			}			
-		}
-		
-		return content;
-	}
-	private void removecache(String cachekey)
-	{
-		synchronized(lock)
-		{
-			this.democontentCache.remove(cachekey);
-		}
-	}
-	private DaemonThread damon = null; 
-	private long refreshInterval= 10000;
+	 
+	private FileContentCache fileContentCache;  
 	public static final String cacheobjectkey = "org.frameworkset.web.demo.DemoContentCache";
 	
-	 
-	
-	 class ResourceCacheRefresh implements ResourceInitial
-	{
-		private String cachekey;
-		public ResourceCacheRefresh(String cachekey)
-		{
-			this.cachekey =cachekey;
-		}
-		public void reinit() {
-			removecache(cachekey);
-		}
+	public String getFileContent(String path,String charset,boolean convertHtmlTag)
+	{	
 		
+		return fileContentCache.getFileContent(path, charset, convertHtmlTag);
 	}
-
+	 
+	  
 
 
 	public void afterPropertiesSet() throws Exception
 	{
-		damon = new DaemonThread(refreshInterval,"DEMO Refresh Monitor Worker"); 
-		damon.start();
+		fileContentCache = new FileContentCache();
+		fileContentCache.setRefreshInterval(refreshInterval);
+		fileContentCache.start();
 		
 	}
 	
-	public long getRefreshInterval()
-	{
-	
-		return refreshInterval;
-	}
-	
-	public void setRefreshInterval(long refreshInterval)
-	{
-	
-		this.refreshInterval = refreshInterval;
-	}
+ 
 	@Override
 	public void destroy() throws Exception {
-		if(damon != null)
+		if(fileContentCache != null)
 		{
-			damon.stopped();
+			fileContentCache.destroy();
 		}
 		
 	}
+	private long refreshInterval= 10000;
+	
+
+
+
+	 
+	
+	 
 	
 	
 }

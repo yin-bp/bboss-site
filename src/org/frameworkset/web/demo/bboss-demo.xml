@@ -6,5 +6,5 @@ bboss-demo.xml
 <properties>
     <property name="org.frameworkset.web.demo.DemoContentCache" 
 		class="org.frameworkset.web.demo.DemoContentCache" 
-		f:refreshInterval="60000"/>			    
+		f:refreshInterval="6000"/>			    
 </properties>
