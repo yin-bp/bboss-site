@@ -1,14 +1,15 @@
 # bboss官方网站及bboss demo工程
  
 
-# 自动代码生成框架构建运行说明：
+# 工程构建运行说明：
 ## 1.搭建好ant构建环境和jdk 1.7及以上
 ## 2.运行工程根目录下的build.bat指令
 ## 3.构建成功后,会生成两个文件：
 
 distrib/bboss-site.jar
+
 distrib/bboss-site.war
-http://localhost:8080/gencode
+
 
 ## License
 
