@@ -38,7 +38,7 @@ public class DemoContentCache implements org.frameworkset.spi.InitializingBean,D
 	public String getFileContent(String path,String charset,boolean convertHtmlTag)
 	{	
 		
-		return fileContentCache.getFileContent(path, charset, convertHtmlTag);
+		return fileContentCache.getFileContent(path, charset, FileContentCache.HTMLNoBREncode);
 	}
 	 
 	  
@@ -48,7 +48,7 @@ public class DemoContentCache implements org.frameworkset.spi.InitializingBean,D
 	{
 		fileContentCache = new FileContentCache();
 		fileContentCache.setRefreshInterval(refreshInterval);
-		fileContentCache.start();
+		fileContentCache.start("Site Source Resources");
 		
 	}
 	
