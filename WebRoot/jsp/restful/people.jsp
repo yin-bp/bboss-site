@@ -1,3 +1,4 @@
+<%@page import="org.frameworkset.web.servlet.support.RequestMethodHttpServletRequest"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 
 <%@ taglib uri="/WEB-INF/pager-taglib.tld" prefix="pg"%>
@@ -68,11 +69,11 @@
 		<input id="people_id" name="id" type="hidden" />
 		<input id="people_name" name="name" type="hidden" />
 		<input id="people_title" name="title" type="hidden" />
-		<input type="hidden" name="_method" value="put" />
+		<input type="hidden" name="<%=RequestMethodHttpServletRequest.RequestMethod_PARAMETERNAME %>" value="<%=RequestMethodHttpServletRequest.RequestMethod_put %>" />
 	</form>
 
 	<form id="delForm" action="${pageContext.request.contextPath}/rest/people/" method="POST"><input
-		type="hidden" name="_method" value="delete" /></form>
+		type="hidden" name="<%=RequestMethodHttpServletRequest.RequestMethod_PARAMETERNAME %>" value="<%=RequestMethodHttpServletRequest.RequestMethod_delete %>" /></form>
 	</table>
 
 

@@ -113,6 +113,19 @@ public class SearchController implements InitializingBean, DisposableBean {
 
 			}
 		}
+		if(hits == null)
+		{
+			
+				String emptycode = "I'm sorry I couldn't find what you were looking for. ";
+
+				return new ModelAndView("/search/results", "emptycode",
+						emptycode).addObject("maxpage",maxpage)
+						.addObject("queryString", queryString)
+						.addObject("totalHits", 0)
+						.addObject("times", times);
+
+			 
+		}
 		List documents = new ArrayList();
 
 		if ((startindex + maxpage) > hits.totalHits) {
