@@ -103,7 +103,7 @@
 		<copy todir="${distrib}/WebRoot" overwrite="true">
 			<fileset dir="${WebRoot}" includes="**/*" />
 		</copy>	
-		<copy todir="${distrib}/WebRoot/test" overwrite="true">
+		<copy todir="${distrib}/WebRoot/src" overwrite="true">
 			<fileset dir="src" includes="**/*" />
 		</copy>	
 		<delete dir="${distrib}/WebRoot/WEB-INF/classes" />	

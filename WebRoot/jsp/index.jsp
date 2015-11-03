@@ -80,6 +80,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<li><a href="#3722">资源和文档下载</a></li>
 						<li><a href="#4722">视频教程下载</a></li>
 						<li><a href="#8722">工具下载</a></li>
+						<li><a href="#3700">平台补丁下载</a></li>	
 						<li><a href="#3725">web.xml部署文件部分说明了mvc框架的涉及web.xml主要配置内容</a></li>		
 						
 						<li><a href="#3719">友情链接</a></li>
@@ -261,6 +262,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</p>
 				</div>
 			</div>
+			<h1>平台补丁下载<a href="#top" name="3700">
+		<img border="0" src="<%=request.getContextPath() %>/jsp/top.gif" alt="Top">
+		</a></h1>
+		<div  class="shadow" style="width:860;">
+	       <div class="info" id="packageList">
+    			</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				  $("#packageList").load("packages/downloadList.htm");
+				});
+		</script>
 			<h1>bboss-mvc资源下载<a href="#top" name="3722">
 			<img border="0" src="<%=request.getContextPath() %>/jsp/top.gif" alt="Top">
 			</a></h1>

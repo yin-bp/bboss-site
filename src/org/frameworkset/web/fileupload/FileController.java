@@ -209,6 +209,16 @@ public class FileController {
 		return file;
 	}
 	
+	@HandlerMapping(value = "/package/download.htm")
+	public @ResponseBody File downloadPackageFile(@RequestParam(decodeCharset="UTF-8")
+	String fileName, HttpServletRequest request)
+			throws IOException {
+		if(fileName != null && fileName.indexOf("..") > 0)
+			throw new IOException(fileName +" is illeage:.. is not allowed.");
+		File file = new File(request.getRealPath("/")+"package/"+fileName);
+		return file;
+	}
+	
 	
 	@HandlerMapping(value = "/tool/download.htm")
 	public @ResponseBody File downloadToolFile(@RequestParam(decodeCharset="UTF-8")
@@ -292,29 +302,8 @@ public class FileController {
 	    }
 	   @HandlerMapping(value="/files/downloadList.htm")
 	   public String filesDownList(ModelMap model,HttpServletRequest request) {
-			File file = new File(request.getRealPath("/")+"filesdown");
-
-			List<UpFile> files = new ArrayList<UpFile>();
-			if (file.exists()) {
-				File[] fl = file.listFiles();
-				for (int i = 0; fl != null && i < fl.length; i++) {
-					if(fl[i].isDirectory())
-						continue;
-					UpFile uf = new UpFile();
-					uf.setFileName(fl[i].getName());
-					uf.setFileSize(fl[i].length());
-					String type = uf.getFileName().substring(
-							uf.getFileName().lastIndexOf("."),
-							uf.getFileName().length());
-
-					uf.setFileType(type);
-					SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-					uf.setLastModified(sdf.format(new Date(fl[i].lastModified())));
-					files.add(uf);
-				}
-			}
-			if(files != null && files.size() > 0)
-				sortfile(files);
+		   List<UpFile> files = _getfiles(  request, "filesdown");
+		 
 			model.addAttribute("files", files);
 			model.addAttribute("filetype", "file");
 			return "files/downloadlist";
@@ -323,45 +312,19 @@ public class FileController {
 	   
 	   @HandlerMapping(value="/vidios/downloadList.htm")
 	   public String vidiosDownList(ModelMap model,HttpServletRequest request) {
-			File file = new File(request.getRealPath("/")+"vidiosdown");
+			 
 
-			List<UpFile> files = new ArrayList<UpFile>();
-			if (file.exists()) {
-				File[] fl = file.listFiles(new FileFilter(){
-
-					@Override
-					public boolean accept(File pathname) {
-						if(pathname.isDirectory() || pathname.getName().equals("Thumbs.db"))
-							return false;
-						else
-							return true;
-					}});
-				for (int i = 0; fl != null && i < fl.length; i++) {
-					if(fl[i].isDirectory())
-						continue;
-					UpFile uf = new UpFile();
-					uf.setFileName(fl[i].getName());
-					uf.setFileSize(fl[i].length());
-					String type = uf.getFileName().substring(
-							uf.getFileName().lastIndexOf("."),
-							uf.getFileName().length());
-
-					uf.setFileType(type);
-					SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-					uf.setLastModified(sdf.format(new Date(fl[i].lastModified())));
-					files.add(uf);
-				}
-			}
-			if(files != null && files.size() > 0)
-				sortfile(files);
+			List<UpFile> files = _getfiles(  request, "vidiosdown");
+			 
 			model.addAttribute("files", files);
 			model.addAttribute("filetype", "vidio");
 
 			return "files/downloadlist";
 		}
-	   @HandlerMapping(value="/tools/downloadList.htm")
-	   public String toolsDownList(ModelMap model,HttpServletRequest request) {
-			File file = new File(request.getRealPath("/")+"toolsdown");
+	   
+	   private List<UpFile> _getfiles(HttpServletRequest request, String dir)
+	   {
+		   File file = new File(request.getRealPath("/")+dir);
 
 			List<UpFile> files = new ArrayList<UpFile>();
 			if (file.exists()) {
@@ -392,6 +355,23 @@ public class FileController {
 			}
 			if(files != null && files.size() > 0)
 				sortfile(files);
+			return files;
+	   }
+	   
+	   @HandlerMapping(value="/packages/downloadList.htm")
+	   public String packagesDownList(ModelMap model,HttpServletRequest request) {
+		   List<UpFile> files = _getfiles(  request, "package");
+			 
+			model.addAttribute("files", files);
+			model.addAttribute("filetype", "package");
+
+			return "files/downloadlist";
+		}
+	   @HandlerMapping(value="/tools/downloadList.htm")
+	   public String toolsDownList(ModelMap model,HttpServletRequest request) {
+		 
+			 List<UpFile> files = _getfiles(  request, "toolsdown");
+			 
 			model.addAttribute("files", files);
 			model.addAttribute("filetype", "tool");
 

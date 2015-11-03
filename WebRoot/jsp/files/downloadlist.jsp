@@ -27,15 +27,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
        <pg:list requestKey="files">
        <tr class="even">
          <td >
-            <pg:equal actual="${filetype }" value="file">      
-            <a href="<%=request.getContextPath() %>/file/download.htm?fileName=<pg:cell colName="fileName"/>"><pg:cell colName="fileName"/></a>
-            </pg:equal>
-            <pg:equal actual="${filetype }" value="vidio">      
-            <a href="<%=request.getContextPath() %>/vidio/download.htm?fileName=<pg:cell colName="fileName"/>"><pg:cell colName="fileName"/></a>
-            </pg:equal>  
-            <pg:equal actual="${filetype }" value="tool">      
-            <a href="<%=request.getContextPath() %>/tool/download.htm?fileName=<pg:cell colName="fileName"/>"><pg:cell colName="fileName"/></a>
-            </pg:equal>
+         	<pg:case actual="${filetype }">
+	            <pg:equal value="file">      
+	            <a href="<%=request.getContextPath() %>/file/download.htm?fileName=<pg:cell colName="fileName" encode="true" encodecount="2"/>"><pg:cell colName="fileName"/></a>
+	            </pg:equal>
+	            <pg:equal  value="vidio">      
+	            <a href="<%=request.getContextPath() %>/vidio/download.htm?fileName=<pg:cell colName="fileName" encode="true" encodecount="2"/>" ><pg:cell colName="fileName"/></a>
+	            </pg:equal>  
+	            <pg:equal  value="tool">      
+	            <a href="<%=request.getContextPath() %>/tool/download.htm?fileName=<pg:cell colName="fileName" encode="true" encodecount="2"/>"><pg:cell colName="fileName"/></a>
+	            </pg:equal>
+	            <pg:equal  value="package">      
+	            <a href="<%=request.getContextPath() %>/package/download.htm?fileName=<pg:cell colName="fileName" encode="true" encodecount="2"/>"><pg:cell colName="fileName"/></a>
+	            </pg:equal>
+            </pg:case>
          </td>
          <td >
             <pg:cell colName="fileType"></pg:cell>
