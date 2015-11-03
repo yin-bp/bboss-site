@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 	</head>
 	<body>
-	<div><a name="top"></a><a href="http://yin-bp.iteye.com" target="_blank">bboss博客</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bbossgroups-3.5" target="_blank">Bboss GitHub</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bbossgroups-3.5/archive/master.zip" target="_blank">下载</a>&nbsp;&nbsp;&nbsp;<a href="#3719">友情链接</a>&nbsp;&nbsp;&nbsp;<a href="#1002">联系我们</a>		</div>
+	<div><a name="top"></a><a href="http://yin-bp.iteye.com" target="_blank">bboss博客</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss" target="_blank">Bboss GitHub</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss/archive/master.zip" target="_blank">下载</a>&nbsp;&nbsp;&nbsp;<a href="#3719">友情链接</a>&nbsp;&nbsp;&nbsp;<a href="#1002">联系我们</a>		</div>
 	<div id="caption">
     <ul id="top">
         
@@ -128,8 +128,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="info">
 					<p><ul>
 				
-						<li><a href="https://github.com/bbossgroups/bbossgroups-3.5" target="_blank">github源码库（开发库，实时更新）</a>&nbsp;<a href="https://github.com/bbossgroups/bbossgroups-3.5/archive/master.zip" target="_blank">下载</a></li>
-						<li><a href="https://github.com/bbossgroups/bbossgroups-3.5/commits/master" target="_blank">版本更新记录</a></li>
+						<li><a href="https://github.com/bbossgroups/bboss" target="_blank">github源码库（开发库，实时更新）</a>&nbsp;<a href="https://github.com/bbossgroups/bboss/archive/master.zip" target="_blank">下载</a></li>
+						<li><a href="https://github.com/bbossgroups/bboss/commits/master" target="_blank">版本更新记录</a></li>
 						
 						</ul>	
 					</p>
@@ -324,7 +324,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="info"><p>
 						<ul>			
 						<li><a href="http://yin-bp.iteye.com/" target="_blank">bboss官方博客</a></li>
-						<li><a href="https://github.com/bbossgroups/bbossgroups-3.5" target="_blank">bboss github托管地址</a></li>			
+						<li><a href="https://github.com/bbossgroups/bboss" target="_blank">bboss github托管地址</a></li>			
 						<li><a href="http://www.iteye.com/wiki/bbossgroups/3092-mvc-bboss-config" target="_blank">bboss 开发系列文章之一 最佳实践</a> </li>
 						<li><a href="http://yin-bp.iteye.com/blog/1026261" target="_blank">搭建bboss mvc eclipse开发工程，编写第一个实例</a></li>
 						<li><a href="http://www.iteye.com/wiki/bbossgroups/3094-persistent" target="_blank">bboss SQLExecutor组件api使用实例</a></li>
