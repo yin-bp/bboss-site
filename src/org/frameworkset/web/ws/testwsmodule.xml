@@ -2,7 +2,7 @@
 	<property name="mysfirstmvcwsservice" 					  
 					  ws:servicePort="mysfirstMVCwsservicePort"				  
 					  class="org.frameworkset.web.ws.WSServiceInMVCImpl"/>
-	<property name="mysfirstwsservice" 					  
+	<property name="mysfirstwsservice" 	enablerpc="true"				  
 					  ws:servicePort="mysfirstwsservicePort"				  
 					  class="org.frameworkset.web.ws.WSServiceImpl"/>
 					  
