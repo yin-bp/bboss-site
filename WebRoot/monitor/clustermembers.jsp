@@ -38,7 +38,7 @@ if(remoteevent_enabled)
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>集群节点监控</title>
-<%@ include file="/common/jsp/css.jsp"%>
+<%@ include file="/include/css.jsp"%>
 
 		<script type="text/javascript" language="Javascript">
 		function flushBotton(){
