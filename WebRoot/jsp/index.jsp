@@ -29,14 +29,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 	</head>
 	<body>
-	<div><a name="top"></a><a href="http://yin-bp.iteye.com" target="_blank">bboss博客</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss" target="_blank">Bboss GitHub</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss/archive/master.zip" target="_blank">下载</a>&nbsp;&nbsp;&nbsp;<a href="#3719">友情链接</a>&nbsp;&nbsp;&nbsp;<a href="#1002">联系我们</a>		</div>
+	<div><a name="top"></a><a href="http://yin-bp.iteye.com" target="_blank">bboss博客</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss" target="_blank">Bboss GitHub</a>&nbsp;&nbsp;&nbsp;<a href="http://gencode.bbossgroups.com" target="_blank">代码生成工具</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss/archive/master.zip" target="_blank">下载</a>&nbsp;&nbsp;&nbsp;<a href="#3719">友情链接</a>&nbsp;&nbsp;&nbsp;<a href="#1002">联系我们</a>		</div>
 	<div id="caption">
     <ul id="top">
         
         <li id="runtime">
             <span class="uptime"><P>最新资讯：
+            	<a href="http://yin-bp.iteye.com/blog/2256948" target="_blank">bboss自动代码生成工具使用指南</a>&nbsp;
+            	
             	<a href="http://yin-bp.iteye.com/blog/1877259" target="_blank">扩展Activiti-5.12轻松实现流程节点间自由跳转和任意驳回/撤回</a>&nbsp;
-            	<a href="http://yin-bp.iteye.com/blog/1869404" target="_blank">bboss离线开发文档下载</a>
+            	
             	<a href="http://yin-bp.iteye.com/blog/1814978" target="_blank">bboss 发布和使用hessian服务方法介绍 </a> 
  							</P></span>
         </li>
