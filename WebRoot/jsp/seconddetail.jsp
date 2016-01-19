@@ -324,7 +324,20 @@
 	</div>
 	
 	
-   
+   <h3 align="center">
+				
+				 
+				<script type="text/javascript">
+					var cnzz_protocol = (("https:" == document.location.protocol) ? " https://"
+							: " http://");
+					document
+							.write(unescape("%3Cspan id='cnzz_stat_icon_1254131450'%3E%3C/span%3E%3Cscript src='"
+									+ cnzz_protocol
+									+ "s11.cnzz.com/z_stat.php%3Fid%3D1254131450%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));
+				</script><a href="http://www.miitbeian.gov.cn" target="_blank">湘ICP备16000994号</a> 回到顶部<a href="#top" name="3727"> <img border="0"
+					src="<%=request.getContextPath()%>/jsp/top.gif" alt="Top">
+				</a>
+			</h3>
 
 </body>
  </pg:beaninfo>
