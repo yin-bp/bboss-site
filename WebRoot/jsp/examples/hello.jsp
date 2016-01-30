@@ -224,6 +224,7 @@
 					</tr>
 			    </tbody>
 			</table>
+			</form>
 			<h3>
 				Hello World Time bind Example.
 			</h3>
