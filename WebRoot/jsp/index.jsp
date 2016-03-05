@@ -65,7 +65,7 @@
 				<div class="info">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bboss是一个j2ee开源框架，为企业级应用开发提供一站式解决方案，并能有效地支撑移动应用开发。bboss功能涵盖ioc，mvc，jsp自定义标签库，持久层，全局事务托管，安全认证，SSO，web会话共享，cxfwebservice服务发布和管理，hessian服务发布和管理等功能。另外还提供了符合中国式自由流的bboss
-						activiti工作流引擎。在不断的实践过程，越来越多的好东西被吸纳到bboss这个大家庭中，使得bboss能够更好地应用于企业应用项目中，能够更好地解决开发过程中碰到的实际问题。
+						activiti工作流引擎。在不断的实践过程中，越来越多的好东西被吸纳到bboss这个大家庭中，使得bboss能够更好地应用于企业应用项目中，能够更好地解决开发过程中碰到的实际问题。
 					</p>
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于bboss，可以快速地开发构建稳定、高效、健壮、可扩展的企业级应用系统。
@@ -439,7 +439,7 @@
 							<b>QQ:122054810<br /> QQ交流群： 21220580 166471282 166471103
 								154752521 3625720
 							</b><br />
-							<b>微信公众号：</b><img alt="bboss Logo" height="120" width="120"
+							<b>微信公众号：bboss</b>&nbsp;<br><img alt="bboss Logo" height="200" width="200"
 								src="${pageContext.request.contextPath}/jsp/getqrcode.jpg">
 						</div>
 						</p>
