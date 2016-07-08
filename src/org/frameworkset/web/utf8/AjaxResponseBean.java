@@ -17,7 +17,7 @@ public class AjaxResponseBean implements Serializable {
 	private String status;
 	
 	//信息
-	private String data;
+	private SimplEntity data;
 	
 	private String e;
 	
@@ -27,16 +27,17 @@ public class AjaxResponseBean implements Serializable {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getData() {
-		return data;
-	}
-	public void setData(String data) {
-		this.data = data;
-	}
+	 
 	public String getE() {
 		return e;
 	}
 	public void setE(String e) {
 		this.e = e;
+	}
+	public SimplEntity getData() {
+		return data;
+	}
+	public void setData(SimplEntity data) {
+		this.data = data;
 	}
 }

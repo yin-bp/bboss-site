@@ -1,2 +1,10 @@
 /distrib/
 /build.log
+/build/
+/bin/
+/.gradle/
+/.settings/
+/.classpath
+/.project
+/common-mvc.log
+/velocity.log
