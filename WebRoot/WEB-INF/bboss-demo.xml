@@ -5,7 +5,7 @@ bboss-demo.xml
 -->
 <properties>
 
-	<property name="/index.htm,/detail.htm" f:demo_sites="attr:demo_sites"
+	<property name="/index.htm,/index.html,/detail.htm" f:demo_sites="attr:demo_sites"
 		class="org.frameworkset.web.demo.SiteDemoController" singlable="true" />
 		
 	
