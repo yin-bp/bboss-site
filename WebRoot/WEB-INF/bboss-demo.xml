@@ -5,7 +5,7 @@ bboss-demo.xml
 -->
 <properties>
 
-	<property name="/index.htm,/detail.htm" f:demo_sites="attr:demo_sites"
+	<property name="/index.htm,/index.html,/detail.htm" f:demo_sites="attr:demo_sites"
 		class="org.frameworkset.web.demo.SiteDemoController" singlable="true" />
 		
 	
@@ -955,47 +955,7 @@ bboss-demo.xml
 					resutful风格实现全文检索
 				]]></property>
 			</property>
-			<property f:name="datagrid-jquery" f:cnname="datagrid-jquery"
-				class="org.frameworkset.web.demo.SiteDemoBean">
-				
-				<property name="configFile" value="WEB-INF/bboss-datagrid.xml" />
-				
-				<property name="configFileCharset" value="UTF-8"></property>
-				<property name="beanClassCharset" value="UTF-8"></property>
-				<property name="visturl">
-					<list componentType="String">
-						<property value="/datagrid/editer.page" />
-					</list>
-				</property>
-				<property name="formlist">
-					<list componentType="bean">
-					
-						<property f:formPath="jsp/datagrid/page/datagrid_editer.jsp" f:charset="UTF-8"
-							class="org.frameworkset.web.demo.FormUrl">
-							<property name="description"><![CDATA[
-								表单datagrid/page/datagrid_editer.jsp
-							]]></property>
-						</property>
-					<property f:formPath="jsp/datagrid/page/returnJson.jsp" f:charset="UTF-8"
-							class="org.frameworkset.web.demo.FormUrl">
-							<property name="description"><![CDATA[
-								表单datagrid/page/returnJson.jsp
-							]]></property>
-						</property>
-				
-						<property f:formPath="jsp/datagrid/page/datagrid_info.jsp" f:charset="utf-8"
-							class="org.frameworkset.web.demo.FormUrl">
-							<property name="description"><![CDATA[
-								表单jsp/datagrid/page/datagrid_info.jsp
-							]]></property>
-						</property>
-						
-					</list>
-				</property>
-				<property name="description"><![CDATA[
-					datagrid
-				]]></property>
-			</property>
+			
 			
 			<property f:name="portal-jquery" f:cnname="jquery easyui portal 实例"
 				class="org.frameworkset.web.demo.SiteDemoBean">

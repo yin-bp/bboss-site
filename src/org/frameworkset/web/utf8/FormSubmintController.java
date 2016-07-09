@@ -10,12 +10,14 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
+import org.frameworkset.util.annotations.ResponseBody;
 import org.frameworkset.web.multipart.MultipartFile;
 import org.frameworkset.web.multipart.MultipartHttpServletRequest;
 import org.frameworkset.web.servlet.ModelAndView;
+
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * 
@@ -52,11 +54,10 @@ public class FormSubmintController {
 	 * @param request
 	 * @param response
 	 */
-	public void easyUiForm(SimplEntity entity ,HttpServletRequest request, HttpServletResponse response){
+	public @ResponseBody(datatype="json") AjaxResponseBean easyUiForm(SimplEntity entity ,HttpServletRequest request, HttpServletResponse response){
 		//System.out.println("cerator");
 		AjaxResponseBean ajaxResponseBean=new AjaxResponseBean();
 		ajaxResponseBean.setStatus("success");
-		ObjectMapper objectMapper = new ObjectMapper();
 		/***
 		 * 当表单是通过ajax(jquery)提交的
 		 * 提交上来的表单编码是 UTF-8 （默认）
@@ -66,19 +67,11 @@ public class FormSubmintController {
 		 * request.getCharacterEncoding() 是为 ：NULL
 		 * 所以设置response.setCharacterEncoding("utf-8");
 		 */	
-		response.setCharacterEncoding("UTF-8");
-		System.out.println(request.getCharacterEncoding());
-		try {
-			ajaxResponseBean.setData(objectMapper.writeValueAsString(entity));
-			System.out.println(ajaxResponseBean.getData());
-			write(response, ajaxResponseBean);
-		} catch (JsonGenerationException e) {
-			e.printStackTrace();
-		} catch (JsonMappingException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	 
+		ajaxResponseBean.setData( entity);
+//		System.out.println(ajaxResponseBean.getData());
+//		write(response, ajaxResponseBean);
+		return ajaxResponseBean;
 	}
 	
 	/**
@@ -86,11 +79,10 @@ public class FormSubmintController {
 	 * @param request
 	 * @param response
 	 */
-	public void easyUiFormGet(SimplEntity entity ,HttpServletRequest request, HttpServletResponse response){
+	public @ResponseBody(datatype="json") AjaxResponseBean easyUiFormGet(SimplEntity entity ,HttpServletRequest request, HttpServletResponse response){
 		//System.out.println("cerator");
 		AjaxResponseBean ajaxResponseBean=new AjaxResponseBean();
 		ajaxResponseBean.setStatus("success");
-		ObjectMapper objectMapper = new ObjectMapper();
 		/***
 		 * 当表单是通过ajax(jquery)提交的
 		 * 提交上来的表单编码是 UTF-8 （默认）
@@ -100,19 +92,11 @@ public class FormSubmintController {
 		 * request.getCharacterEncoding() 是为 ：NULL
 		 * 所以设置response.setCharacterEncoding("utf-8");
 		 */	
-		response.setCharacterEncoding("UTF-8");
-		System.out.println(request.getCharacterEncoding());
-		try {
-			ajaxResponseBean.setData(objectMapper.writeValueAsString(entity));
-			System.out.println(ajaxResponseBean.getData());
-			write(response, ajaxResponseBean);
-		} catch (JsonGenerationException e) {
-			e.printStackTrace();
-		} catch (JsonMappingException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	 
+		ajaxResponseBean.setData( entity);
+//		System.out.println(ajaxResponseBean.getData());
+//		write(response, ajaxResponseBean);
+		return ajaxResponseBean;
 	}
 	
 	/**
@@ -120,10 +104,9 @@ public class FormSubmintController {
 	 * @param request
 	 * @param response
 	 */
-	public void generalAjax(SimplEntity entity, HttpServletRequest request,HttpServletResponse response){
+	public @ResponseBody(datatype="json") AjaxResponseBean generalAjax(SimplEntity entity, HttpServletRequest request,HttpServletResponse response){
 		AjaxResponseBean ajaxResponseBean=new AjaxResponseBean();
 		ajaxResponseBean.setStatus("success");
-		ObjectMapper objectMapper = new ObjectMapper();
 		/***
 		 * 当表单是通过ajax(jquery)提交的
 		 * 提交上来的表单编码是 UTF-8 （默认）
@@ -131,19 +114,13 @@ public class FormSubmintController {
 		 * 普通表单提交的数据 request.getCharacterEncoding() 为NULL
 		 * 
 		 */		
-		response.setCharacterEncoding(request.getCharacterEncoding());
-		System.out.println(request.getCharacterEncoding());
-		try {
-			ajaxResponseBean.setData(objectMapper.writeValueAsString(entity));
-			System.out.println(ajaxResponseBean.getData());
-			write(response, ajaxResponseBean);
-		} catch (JsonGenerationException e) {
-			e.printStackTrace();
-		} catch (JsonMappingException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		 
+		 
+			ajaxResponseBean.setData( entity);
+//			System.out.println(ajaxResponseBean.getData());
+//			write(response, ajaxResponseBean);
+			return ajaxResponseBean;
+		  
 	}
 	
 	/**
@@ -151,24 +128,23 @@ public class FormSubmintController {
 	 * @param request
 	 * @param response
 	 */
-	public void generalAjaxGet(SimplEntity entity, HttpServletRequest request,HttpServletResponse response){
+	public @ResponseBody(datatype="json") AjaxResponseBean generalAjaxGet(SimplEntity entity, HttpServletRequest request,HttpServletResponse response){
 		AjaxResponseBean ajaxResponseBean=new AjaxResponseBean();
 		ajaxResponseBean.setStatus("success");
-		ObjectMapper objectMapper = new ObjectMapper();
-		System.out.println(request.getCharacterEncoding());
-		
-
-		try {
-			ajaxResponseBean.setData(objectMapper.writeValueAsString(entity));
-			System.out.println(ajaxResponseBean.getData());
-			write(response, ajaxResponseBean);
-		} catch (JsonGenerationException e) {
-			e.printStackTrace();
-		} catch (JsonMappingException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		/***
+		 * 当表单是通过ajax(jquery)提交的
+		 * 提交上来的表单编码是 UTF-8 （默认）
+		 * 服务器做出响应时需要将 response的编码设置成通request请求一样
+		 * 普通表单提交的数据 request.getCharacterEncoding() 为NULL
+		 * 而easyuifrom 是对于jquery的一个封装 所有一样要使用  而它提交的表单
+		 * request.getCharacterEncoding() 是为 ：NULL
+		 * 所以设置response.setCharacterEncoding("utf-8");
+		 */	
+	 
+		ajaxResponseBean.setData( entity);
+//		System.out.println(ajaxResponseBean.getData());
+//		write(response, ajaxResponseBean);
+		return ajaxResponseBean;
 	}
 	
 	/**

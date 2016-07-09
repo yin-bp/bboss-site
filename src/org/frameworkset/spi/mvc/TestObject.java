@@ -15,12 +15,6 @@
  */
 package org.frameworkset.spi.mvc;
 
-import java.sql.SQLException;
-
-import org.junit.Test;
-
-import com.frameworkset.common.poolman.DBUtil;
-
 /**
  * <p>Title: TestObject.java</p> 
  * <p>Description: </p>
@@ -45,16 +39,6 @@ public class TestObject {
 	public void setId(String id) {
 		this.id = id;
 	}
-	@Test
-	public void testKey()
-	{
-		try {
-			long value = DBUtil.getNextPrimaryKey("ListBean");
-			System.out.println(value);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	 
 
 }
