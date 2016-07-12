@@ -14,11 +14,7 @@ import org.frameworkset.util.annotations.ResponseBody;
 import org.frameworkset.web.multipart.MultipartFile;
 import org.frameworkset.web.multipart.MultipartHttpServletRequest;
 import org.frameworkset.web.servlet.ModelAndView;
-
-import com.fasterxml.jackson.core.JsonGenerationException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
+ 
 /**
  * 
  * @Title: FormSubmintController.java
@@ -226,21 +222,7 @@ public class FormSubmintController {
 		}
 	}
 	
-	/**
-	 * 转成json对象，直接用response的print方法
-	 * 
-	 * @param response
-	 * @param ajaxResponseBean
-	 * @throws IOException
-	 */
-	@SuppressWarnings("unused")
-	private void write(HttpServletResponse response,
-			AjaxResponseBean ajaxResponseBean) throws IOException {
-		ObjectMapper objectMapper = new ObjectMapper();
-		String responseText = objectMapper.writeValueAsString(ajaxResponseBean);
-		response.getWriter().print(responseText);
-	}
-	
+ 
 	
 	/**
 	 * 把文件名转换成UTF-8编码
