@@ -196,7 +196,7 @@ dependencies {
             [group: 'com.alibaba', name: 'druid', version: '1.0.11', transitive: false],
                [group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.3.1', transitive: false],
             [group: 'net.sourceforge.jexcelapi', name: 'jxl', version: '2.6.12', transitive: false],
-            [group: 'commons-beanutils', name: 'commons-beanutils', version: '1.7.0', transitive: false],
+            [group: 'commons-beanutils', name: 'commons-beanutils', version: '1.8.0', transitive: false],
             
              [group: 'xml-resolver', name: 'xml-resolver', version: '1.2', transitive: false],
             [group: 'org.apache.xmlbeans', name: 'xmlbeans', version: '2.4.0', transitive: false],
