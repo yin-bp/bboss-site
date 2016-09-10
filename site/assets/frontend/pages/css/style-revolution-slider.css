@@ -53,7 +53,7 @@
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
 }
-.slide_title, .slide_subtitle, .slide_desc, .slide_btn{
+.slide_title, .slide_subtitle, .slide_desc,.slide_desc_white, .slide_btn{
 	-moz-box-sizing: content-box; 
 	-webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -79,6 +79,11 @@
 }
 .slide_desc {
 	color: #7b8793;
+	font-size: 14px;
+	line-height: 25px;
+}
+.slide_desc_white {
+	color: #fff;
 	font-size: 14px;
 	line-height: 25px;
 }
