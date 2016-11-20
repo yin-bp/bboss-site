@@ -1,16 +1,4 @@
-buildscript {
-	    repositories {	      
-	        mavenCentral()	
-	        //mavenLocal()        
-	    }
-	
-	    dependencies {
-	        //classpath 'com.bmuschko:gradle-tomcat-plugin:2.2.4'
-	        classpath 'org.akhikhl.gretty:gretty:+'
-	        
-	    }
-	}
- 
+
 configure(allprojects) { project ->
 	group = PROJ_GROUP
 	version = PROJ_VERSION	
@@ -70,6 +58,7 @@ configure(allprojects) { project ->
 
 	repositories {
 		mavenLocal()
+		
 		mavenCentral()
 		
 		
@@ -138,19 +127,7 @@ sourceSets {
     } 
 }
 
-if(enable_gretty.equals("true"))
-{
-    apply plugin: 'org.akhikhl.gretty'
-    
-     gretty {
-	    httpPort = 80
-	   
-	    contextPath = project.name
-	    jvmArgs = ['-Xmx1024M', '-XX:PermSize=128M', '-XX:MaxPermSize=256M']
-	  //  servletContainer = 'jetty7'
-	  
-	  }
-} 
+
 webAppDirName = 'WebRoot'  
 dependencies {
     compile (
