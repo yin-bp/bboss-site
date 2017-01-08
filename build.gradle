@@ -139,7 +139,7 @@ dependencies {
             [group: 'com.bbossgroups', name: 'bboss-data', version: "${bboss_version}", transitive: false],
             [group: 'com.bbossgroups', name: 'bboss-hession', version: "${bboss_version}", transitive: false],
             [group: 'com.bbossgroups', name: 'bboss-core', version: "${bboss_version}", transitive: false],
-            [group: 'com.bbossgroups.rpc', name: 'bboss-rpc', version: "4.10.9", transitive: false],
+            [group: 'com.bbossgroups.rpc', name: 'bboss-rpc', version: "${bbossrpc_version}", transitive: false],
             [group: 'com.bbossgroups', name: 'bboss-persistent', version: "${bboss_version}", transitive: false],
               [group: 'com.bbossgroups', name: 'bboss-mvc', version: "${bboss_version}", transitive: false],
            [group: 'com.bbossgroups', name: 'bboss-velocity', version: "${bboss_version}", transitive: false],
