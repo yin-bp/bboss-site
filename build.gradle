@@ -118,7 +118,7 @@ sourceSets {
             srcDirs 'src'
         }
         resources {
-           'resources'
+           srcDirs 'resources'
         }
     }
     test {
