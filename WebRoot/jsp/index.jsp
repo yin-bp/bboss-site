@@ -101,7 +101,8 @@
         <div class="github-widget" data-repo="bbossgroups/bigdatas"></div>
         <div class="github-widget" data-repo="bbossgroups/bestpractice"></div>
         <div class="github-widget" data-repo="bbossgroups/bboss-plugins"></div>
-        <div class="github-widget" data-repo="bbossgroups/bboss-pdp"></div>
+        <div class="github-widget" data-repo="bbossgroups/bboss-site"></div>
+	<div class="github-widget" data-repo="bbossgroups/bboss-pdp"></div>
 <script type="text/javascript">setTimeout(GithubRepoWidget.init, 5000);</script>
 </div>
 </td><td style="vertical-align: top;"><div style="width: auto; max-width: 600px;">
@@ -114,6 +115,7 @@
 <script src='//git.oschina.net/bboss/bestpractice/widget_preview'></script>
 <script src='//git.oschina.net/bboss/bboss-plugins/widget_preview'></script>
 <script src='//git.oschina.net/bboss/bboss-pdp/widget_preview'></script>
+	<script src='//git.oschina.net/bboss/bboss-site/widget_preview'></script>
 <style>
 .pro_name a{color: #4183c4;}
 .osc_git_title{background-color: #fff;}
