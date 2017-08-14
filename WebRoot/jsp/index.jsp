@@ -95,7 +95,7 @@
         <br>
 <div class="github-widget" data-repo="bbossgroups/sessiondemo"></div>
         <br>
-        <script type="text/javascript" src="../jsp/js/GithubRepoWidget.min.js"></script>
+        <script type="text/javascript" src="${pageContext.request.contextPath}/jsp/js/GithubRepoWidget.min.js"></script>
         <div class="github-widget" data-repo="bbossgroups/bboss-gencode"></div>
         <div class="github-widget" data-repo="bbossgroups/genproject"></div>
         <div class="github-widget" data-repo="bbossgroups/bigdatas"></div>
