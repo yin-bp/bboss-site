@@ -10,7 +10,7 @@
 		<jndiName>dbcp_datasource_jndiname_1</jndiName>
 		<datasourceFile>dbcp.xml</datasourceFile>
 		<autoprimarykey>false</autoprimarykey>
-		<showsql>false</showsql>
+		<showsql>true</showsql>
 		<keygenerate>composite</keygenerate>
 	</datasource>
   

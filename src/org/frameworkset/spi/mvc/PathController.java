@@ -1,15 +1,13 @@
 package org.frameworkset.spi.mvc;
 
-import java.sql.SQLException;
-import java.util.List;
-
-import javax.transaction.RollbackException;
-
+import com.frameworkset.common.poolman.SQLExecutor;
+import com.frameworkset.orm.transaction.TransactionManager;
 import org.frameworkset.util.annotations.RequestParam;
 import org.frameworkset.web.servlet.ModelMap;
 
-import com.frameworkset.common.poolman.SQLExecutor;
-import com.frameworkset.orm.transaction.TransactionManager;
+import javax.transaction.RollbackException;
+import java.sql.SQLException;
+import java.util.List;
 
 /**
  * 
@@ -83,8 +81,23 @@ public class PathController {
 			e.printStackTrace();
 		}
 
-//		return "/databind/table";
+//		return "/databind/table.jsp";
 		return "path:showlist-ok";
+	}
+
+	public String showlistjsp(ModelMap model) {
+		List<ListBean> beans = null;
+		try {
+			beans = (List<ListBean>) SQLExecutor.queryList(ListBean.class,
+					"select * from LISTBEAN");
+			model.addAttribute("datas", beans);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return "/databind/table.jsp";
+
 	}
 
 	public String showbean(ModelMap model, @RequestParam(name = "id") int id) {
