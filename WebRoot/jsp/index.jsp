@@ -14,7 +14,7 @@
 <meta name="description"
 	content="Bboss mvc DEMO列表 资源和文档下载 bboss-mvc框架体系结构图 bboss-mvc框架请求处理流程图 web.xml部署文件部分说明了mvc框架的涉及web.xml主要配置内容 框架更新记录" />
 <meta name="keywords"
-	content="bboss,mvc,ioc,persistent,taglib,bbossgroups,hessian,cxf,webservice,quartz,activiti,Bboss mvc DEMO列表,事务,ibatis,mybatis,hibernate,资源和文档下载 体系结构图, bboss-mvc请求处理流程图,web.xml部署文件,框架更新记录,session,websocket,redis,mongodb" />
+	content="bboss,mvc,ioc,persistent,taglib,bbossgroups,hessian,cxf,webservice,quartz,activiti,Bboss mvc DEMO列表,事务,ibatis,mybatis,hibernate,资源和文档下载,体系结构图,elasticsearch,bboss-mvc请求处理流程图,web.xml部署文件,框架更新记录,session,websocket,redis,mongodb,kafka" />
 <script type='text/javascript'
 	src='${pageContext.request.contextPath}/include/jquery-1.4.2.min.js'
 	language='JavaScript'></script>
@@ -40,25 +40,26 @@
 </head>
 <body>
 		<div id="caption">
-		<div><a name="top" id="top"></a><a href="http://yin-bp.iteye.com" target="_blank">bboss博客</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss" target="_blank">Bboss GitHub</a>&nbsp;&nbsp;&nbsp;<!--<a href="http://gencode.bbossgroups.com" target="_blank">代码生成工具</a>&nbsp;&nbsp;&nbsp;<a href="http://session.bbossgroups.com" target="_blank">session共享</a>-->&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss/archive/master.zip" target="_blank">下载</a>&nbsp;&nbsp;&nbsp;<a href="#3719">友情链接</a>&nbsp;&nbsp;&nbsp;<a href="https://www.oschina.net/news/80852/bboss-session-v-5-0-2-3" target="_blank">bboss session共享框架 v5.0.2.3 发布</a>&nbsp;&nbsp;&nbsp;
-	            	<a href="https://www.oschina.net/news/84208/bboss-5-0-2-9" target="_blank">bboss v5.0.2.9 发布</a>&nbsp;&nbsp;&nbsp;<a href="#1002">联系我们</a>		</div>
-	
+		<div><a name="top" id="top" href="http://47.88.13.185:8080/" target="_blank">持续集成</a>&nbsp;&nbsp;&nbsp;<a href="http://yin-bp.iteye.com" target="_blank">bboss博客</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss" target="_blank">Bboss GitHub</a>&nbsp;&nbsp;&nbsp;<!--<a href="http://gencode.bbossgroups.com" target="_blank">代码生成工具</a>&nbsp;&nbsp;&nbsp;<a href="http://session.bbossgroups.com" target="_blank">session共享</a>-->&nbsp;&nbsp;&nbsp;<a href="https://my.oschina.net/bboss/blog/1557434" target="_blank">bboss快速开发平台介绍</a>&nbsp;&nbsp;&nbsp;<a href="http://www.oschina.net/news/87828/bboss-session-5-0-3-1" target="_blank">bboss session共享框架 v5.0.3.1 发布</a>&nbsp;&nbsp;&nbsp;
+	            	<a href="http://www.oschina.net/news/87819/bboss-5-0-3-6" target="_blank">bboss v5.0.3.6 发布</a>&nbsp;&nbsp;&nbsp;<a href="#1002">联系我们</a>	&nbsp;&nbsp;&nbsp;<a href="#3719">相关链接</a>	</div>
+<div id="caption">	
 	    <ul >
 	        
 	      
  <li id="runtime" >
                     <span  class="uptime"> <P>常用文档：
+<a href="https://my.oschina.net/bboss/blog/1556866" target="_blank">高性能elasticsearch ORM开发库使用介绍</a>&nbsp;
                         <a href="http://yin-bp.iteye.com/blog/2256948" target="_blank">bboss自动代码生成工具使用指南</a>&nbsp;
                          <a href="http://yin-bp.iteye.com/blog/2295166" target="_blank">采用gradle构建和发布bboss方法介绍</a>&nbsp;
                          <a href="http://yin-bp.iteye.com/blog/1026261" target="_blank">bboss mvc快速入门教程</a>&nbsp;
-
+<br>
                         <a href="http://yin-bp.iteye.com/blog/1877259" target="_blank">扩展Activiti-5.12轻松实现流程节点间自由跳转和任意驳回/撤回</a>&nbsp;
 
                         <a href="http://yin-bp.iteye.com/blog/2356672" target="_blank">bboss新版开发平台开发环境搭建和代码生成工具使用视频教程</a>
                           </P></span>                                     
                 </li>
 
-	    </ul>
+	    </ul></div>
 </div>
 
 
@@ -69,7 +70,7 @@
 			<div class="shadow">
 				<div class="info">
 					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bboss是一个j2ee开源框架，为企业级应用开发提供一站式解决方案，并能有效地支撑移动应用开发。bboss功能涵盖ioc，mvc，jsp自定义标签库，持久层，全局事务托管，安全认证，SSO，web会话共享，cxfwebservice服务发布和管理，hessian服务发布和管理，kafka/redis/mq/mongodb、大数据开发等。另外还提供了符合中国式自由流的bboss
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bboss是一个j2ee开源框架，为企业级应用开发提供一站式解决方案，并能有效地支撑移动应用开发。bboss功能涵盖ioc，mvc，jsp自定义标签库，restful，http，rpc，持久层，全局事务托管；安全认证；SSO；web会话共享；cxfwebservice服务发布和管理；hessian服务发布和管理；bboss elasticsearch全文检索客户端框架；kafka/redis/mq/mongodb；大数据开发等。另外还提供了符合中国式自由流的bboss
 						activiti工作流引擎。在不断的实践过程中，越来越多的好东西被吸纳到bboss这个大家庭中，使得bboss能够更好地应用于企业应用项目中，能够更好地解决开发过程中碰到的实际问题。
 					</p>
 					<p>
@@ -91,31 +92,46 @@
 <div style="width: auto; max-width: 600px;">
         <div class="github-widget" data-repo="bbossgroups/bboss"></div>
         <br>
+<div class="github-widget" data-repo="bbossgroups/bboss-elastic"></div>
+        <br>
         <div class="github-widget" data-repo="bbossgroups/security"></div>
+        <br>
+         <div class="github-widget" data-repo="bbossgroups/bboot"></div>
+        <br>
+         <div class="github-widget" data-repo="bbossgroups/bbootdemo"></div>
         <br>
 <div class="github-widget" data-repo="bbossgroups/sessiondemo"></div>
         <br>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/jsp/js/GithubRepoWidget.min.js"></script>
+ <div class="github-widget" data-repo="bbossgroups/elasticsearchdemo"></div>
+        <br>
+        <script type="text/javascript" src="../jsp/js/GithubRepoWidget.min.js"></script>
         <div class="github-widget" data-repo="bbossgroups/bboss-gencode"></div>
         <div class="github-widget" data-repo="bbossgroups/genproject"></div>
         <div class="github-widget" data-repo="bbossgroups/bigdatas"></div>
         <div class="github-widget" data-repo="bbossgroups/bestpractice"></div>
         <div class="github-widget" data-repo="bbossgroups/bboss-plugins"></div>
-        <div class="github-widget" data-repo="bbossgroups/bboss-site"></div>
-	<div class="github-widget" data-repo="bbossgroups/bboss-pdp"></div>
-<script type="text/javascript">setTimeout(GithubRepoWidget.init, 5000);</script>
+        <div class="github-widget" data-repo="bbossgroups/bboss-pdp"></div>
+ <div class="github-widget" data-repo="bbossgroups/bboss-cms"></div>
+<div class="github-widget" data-repo="bbossgroups/bboss-site"></div>
+<script type="text/javascript">setTimeout(GithubRepoWidget.init, 50);</script>
 </div>
 </td><td style="vertical-align: top;"><div style="width: auto; max-width: 600px;">
 	<script src='//git.oschina.net/bboss/bboss/widget_preview'></script>
+<script src='//git.oschina.net/bboss/bboss-elastic/widget_preview'></script>
 	<script src='//git.oschina.net/bboss/security/widget_preview'></script>
+<script src='//git.oschina.net/bboss/bboot/widget_preview'></script>
+        <script src='//git.oschina.net/bboss/bbootdemo/widget_preview'></script>
+
 	<script src='//git.oschina.net/bboss/sessiondemo/widget_preview'></script>
+<script src='//git.oschina.net/bboss/elasticsearchdemo/widget_preview'></script>
 	<script src='//git.oschina.net/bboss/bboss-gencode/widget_preview'></script>
 	<script src='//git.oschina.net/bboss/genproject/widget_preview'></script>
 <script src='//git.oschina.net/bboss/bigdatas/widget_preview'></script>
 <script src='//git.oschina.net/bboss/bestpractice/widget_preview'></script>
 <script src='//git.oschina.net/bboss/bboss-plugins/widget_preview'></script>
 <script src='//git.oschina.net/bboss/bboss-pdp/widget_preview'></script>
-	<script src='//git.oschina.net/bboss/bboss-site/widget_preview'></script>
+<script src='//git.oschina.net/bboss/bboss-cms/widget_preview'></script>
+<script src='//git.oschina.net/bboss/bboss-site/widget_preview'></script>
 <style>
 .pro_name a{color: #4183c4;}
 .osc_git_title{background-color: #fff;}
@@ -148,7 +164,7 @@
 						<li><a href="#3700">平台补丁下载</a></li>
 						<li><a href="#3725">web.xml部署文件部分说明了mvc框架的涉及web.xml主要配置内容</a></li>
 
-						<li><a href="#3719">友情链接</a></li>
+						<li><a href="#3719">相关链接</a></li>
 						<li><a href="#1002">联系我们</a></li>
 					</ul>
 					</p>
@@ -442,7 +458,7 @@
 
 			<div class="blockContainer">
 				<h1>
-					友情链接<a href="#top" name="3719"> <img border="0"
+					相关链接<a href="#top" name="3719"> <img border="0"
 						src="<%=request.getContextPath()%>/jsp/top.gif" alt="Top">
 					</a>
 				</h1>
@@ -451,8 +467,8 @@
 						<p>
 						<ul>
 							<li><a href="http://yin-bp.iteye.com/" target="_blank">bboss官方博客</a></li>
-							<li><a href="https://github.com/bbossgroups/bboss"
-								target="_blank">bboss github托管地址</a></li>
+							<li><a href="https://github.com/bbossgroups"
+								target="_blank">bboss github源码托管地址</a></li>
 							<li><a
 								href="http://www.iteye.com/wiki/bbossgroups/3092-mvc-bboss-config"
 								target="_blank">bboss 开发系列文章之一 最佳实践</a></li>
