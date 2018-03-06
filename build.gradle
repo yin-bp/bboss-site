@@ -135,14 +135,11 @@ dependencies {
     compile (
     
            	[group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25', transitive: true],
-            [group: 'com.bbossgroups', name: 'bboss-util', version: "${bboss_version}", transitive: false],
             [group: 'com.bbossgroups', name: 'bboss-data', version: "${bboss_version}", transitive: false],
             [group: 'com.bbossgroups', name: 'bboss-hession', version: "${bboss_version}", transitive: false],
-            [group: 'com.bbossgroups', name: 'bboss-core', version: "${bboss_version}", transitive: false],
             [group: 'com.bbossgroups.rpc', name: 'bboss-rpc', version: "${bbossrpc_version}", transitive: false],
-            [group: 'com.bbossgroups', name: 'bboss-persistent', version: "${bboss_version}", transitive: false],
+            [group: 'com.bbossgroups', name: 'bboss-persistent', version: "${bboss_version}", transitive: true],
               [group: 'com.bbossgroups', name: 'bboss-mvc', version: "${bboss_version}", transitive: false],
-           [group: 'com.bbossgroups', name: 'bboss-velocity', version: "${bboss_version}", transitive: false],
                 [group: 'com.bbossgroups.security', name: 'bboss-security', version: "${SECURITY_VERSION}", transitive: false],
                 [group: 'com.bbossgroups.security', name: 'bboss-ticket', version: "${SECURITY_VERSION}", transitive: false],
                [group: 'com.bbossgroups.security', name: 'bboss-security-web', version: "${SECURITY_VERSION}", transitive: false],
