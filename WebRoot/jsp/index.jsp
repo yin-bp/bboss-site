@@ -39,8 +39,9 @@
 
 </head>
 <body>
+<script> !(function (c, b, d, a) { c[a] || (c[a] = {}); c[a].config = { userId: '',appKey: '5c35948874d1fd1330b921da', imgUrl: 'http://hubing.online:8081/Up?',disableHook:false, disableJS:false }; var dom = document.createElement("script"); dom.setAttribute("crossorigin", "anonymous"); dom.setAttribute("src", d); document.body.insertBefore(dom, document.body.firstChild); })(window, document, 'http://hubing.online:8082/bundle.js', "__ml"); </script>
 		<div id="caption">
-		<div><a name="top" id="top" href="http://47.88.13.185:8080/" target="_blank">持续集成</a>&nbsp;&nbsp;&nbsp;<a href="http://yin-bp.iteye.com" target="_blank">bboss博客</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss" target="_blank">Bboss GitHub</a>&nbsp;&nbsp;&nbsp;<!--<a href="http://gencode.bbossgroups.com" target="_blank">代码生成工具</a>&nbsp;&nbsp;&nbsp;<a href="http://session.bbossgroups.com" target="_blank">session共享</a>-->&nbsp;&nbsp;&nbsp;<a href="https://my.oschina.net/bboss/blog/1557434" target="_blank">bboss快速开发平台介绍</a>&nbsp;&nbsp;&nbsp;<a href="http://www.oschina.net/news/87828/bboss-session-5-0-3-1" target="_blank">bboss session共享框架 v5.0.3.1 发布</a>&nbsp;&nbsp;&nbsp;
+		<div><a name="top" id="top" href="https://esdoc.bbossgroups.com/" target="_blank">Elasticsearch Bboss</a>&nbsp;&nbsp;&nbsp;<a name="top" id="top" href="http://ci.bbossgroups.com" target="_blank">持续集成</a>&nbsp;&nbsp;&nbsp;<a href="http://yin-bp.iteye.com" target="_blank">bboss博客</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss" target="_blank">Bboss GitHub</a>&nbsp;&nbsp;&nbsp;<!--<a href="http://gencode.bbossgroups.com" target="_blank">代码生成工具</a>&nbsp;&nbsp;&nbsp;<a href="http://session.bbossgroups.com" target="_blank">session共享</a>-->&nbsp;&nbsp;&nbsp;<a href="https://my.oschina.net/bboss/blog/1557434" target="_blank">bboss快速开发平台介绍</a>&nbsp;&nbsp;&nbsp;<a href="http://www.oschina.net/news/87828/bboss-session-5-0-3-1" target="_blank">bboss session共享框架 v5.0.3.1 发布</a>&nbsp;&nbsp;&nbsp;
 	            	<a href="http://www.oschina.net/news/87819/bboss-5-0-3-6" target="_blank">bboss v5.0.3.6 发布</a>&nbsp;&nbsp;&nbsp;<a href="#1002">联系我们</a>	&nbsp;&nbsp;&nbsp;<a href="#3719">相关链接</a>	</div>
 <div id="caption">	
 	    <ul >
@@ -48,7 +49,7 @@
 	      
  <li id="runtime" >
                     <span  class="uptime"> <P>常用文档：
-<a href="https://my.oschina.net/bboss/blog/1556866" target="_blank">高性能elasticsearch ORM开发库使用介绍</a>&nbsp;
+<a href="https://esdoc.bbossgroups.com/#/development" target="_blank">高性能elasticsearch ORM开发库使用介绍</a>&nbsp;
                         <a href="http://yin-bp.iteye.com/blog/2256948" target="_blank">bboss自动代码生成工具使用指南</a>&nbsp;
                          <a href="http://yin-bp.iteye.com/blog/2295166" target="_blank">采用gradle构建和发布bboss方法介绍</a>&nbsp;
                          <a href="http://yin-bp.iteye.com/blog/1026261" target="_blank">bboss mvc快速入门教程</a>&nbsp;
@@ -56,6 +57,7 @@
                         <a href="http://yin-bp.iteye.com/blog/1877259" target="_blank">扩展Activiti-5.12轻松实现流程节点间自由跳转和任意驳回/撤回</a>&nbsp;
 
                         <a href="http://yin-bp.iteye.com/blog/2356672" target="_blank">bboss新版开发平台开发环境搭建和代码生成工具使用视频教程</a>
+<a href="https://gitee.com/bbossgroups/pinpoint-plugin-generate" target="_blank">bboss pinpoint agent plugin自动生成工具使用文档</a>
                           </P></span>                                     
                 </li>
 
@@ -120,6 +122,8 @@
 <script src='//git.oschina.net/bboss/bboss-elastic/widget_preview'></script>
 	<script src='//git.oschina.net/bboss/security/widget_preview'></script>
 <script src='//git.oschina.net/bboss/bboot/widget_preview'></script>
+<script src='https://gitee.com/bbossgroups/eshelloword-booter/widget_preview'></script>
+
         <script src='//git.oschina.net/bboss/bbootdemo/widget_preview'></script>
 
 	<script src='//git.oschina.net/bboss/sessiondemo/widget_preview'></script>
