@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <poolman>
-
+	<needtableinfo>true</needtableinfo>
  <datasource>
 
 		<dbname>dbcp</dbname>
@@ -12,6 +12,7 @@
 		<autoprimarykey>false</autoprimarykey>
 		<showsql>true</showsql>
 		<keygenerate>composite</keygenerate>
+
 	</datasource>
   
  

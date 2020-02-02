@@ -71,7 +71,7 @@ String sname = "";
 				<a href="javascript:void" class="bt_small"  onclick="flushBotton()" id="addButton"><span>刷新页面</span></a>
 				</div>
 				
-				<strong>活动链接信息列表-共<pg:size requestKey="traceobjects"/>个活动链接</strong>
+				<strong>活动链接信息列表-共<pg:size requestKey="traceobjects"/>个链接</strong>
 				 		
 	</div>
 	 

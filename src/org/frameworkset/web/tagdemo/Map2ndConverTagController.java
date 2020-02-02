@@ -15,12 +15,11 @@
  */
 package org.frameworkset.web.tagdemo;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import org.TestBean;
 import org.frameworkset.web.servlet.ModelMap;
 
-import test.TestBean;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**

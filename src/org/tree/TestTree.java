@@ -14,7 +14,7 @@
  *  limitations under the License.  
  */
 
-package test.tree;
+package org.tree;
 
 import java.util.HashMap;
 import java.util.List;

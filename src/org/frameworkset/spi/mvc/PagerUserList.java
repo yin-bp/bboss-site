@@ -15,14 +15,13 @@
  */
 package org.frameworkset.spi.mvc;
 
-import java.sql.SQLException;
-import java.util.List;
-
-import test.pager.TableInfo;
-
 import com.frameworkset.common.poolman.PreparedDBUtil;
 import com.frameworkset.common.tag.pager.DataInfoImpl;
 import com.frameworkset.util.ListInfo;
+import org.pager.TableInfo;
+
+import java.sql.SQLException;
+import java.util.List;
 
 /**
  * <p>Title: PagerUserList.java</p> 

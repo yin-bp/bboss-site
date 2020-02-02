@@ -55,6 +55,7 @@
 	<% 
 		//List poollist = new ArrayList();
 		DBUtil dbUtil = new DBUtil();
+
 		Enumeration enum_ = dbUtil.getAllPoolnames();
 		while(enum_.hasMoreElements()){
 			String poolname = (String)enum_.nextElement();

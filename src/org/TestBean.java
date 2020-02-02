@@ -1,4 +1,4 @@
-package test;
+package org;
 
 public class TestBean {
 	private String id;

@@ -1,22 +1,19 @@
 package org.frameworkset.spi.mvc;
 
-import java.io.IOException;
-import java.sql.SQLException;
-import java.util.List;
-
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.jsp.PageContext;
-
+import com.frameworkset.common.poolman.PreparedDBUtil;
+import com.frameworkset.common.poolman.SQLExecutor;
+import com.frameworkset.util.ListInfo;
 import org.frameworkset.util.annotations.PagerParam;
 import org.frameworkset.util.annotations.RequestParam;
 import org.frameworkset.web.servlet.ModelAndView;
 import org.frameworkset.web.servlet.ModelMap;
+import org.pager.TableInfo;
 
-import test.pager.TableInfo;
-
-import com.frameworkset.common.poolman.PreparedDBUtil;
-import com.frameworkset.common.poolman.SQLExecutor;
-import com.frameworkset.util.ListInfo;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.jsp.PageContext;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
 
 /**
  * 
