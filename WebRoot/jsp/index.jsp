@@ -14,7 +14,7 @@
 <meta name="description"
 	content="Bboss mvc DEMO列表 资源和文档下载 bboss-mvc框架体系结构图 bboss-mvc框架请求处理流程图 web.xml部署文件部分说明了mvc框架的涉及web.xml主要配置内容 框架更新记录" />
 <meta name="keywords"
-	content="bboss,bboss-elasticsearch,rest,highlevelrestclient,bboss-http,http,https,mvc,ioc,persistent,taglib,bbossgroups,hessian,cxf,webservice,quartz,activiti,Bboss mvc DEMO列表,事务,ibatis,mybatis,hibernate,资源和文档下载,体系结构图,elasticsearch,bboss-mvc请求处理流程图,web.xml部署文件,框架更新记录,session,websocket,redis,mongodb,kafka" />
+	content="bboss,mvc,es,elastic,elasticsearch,bboss elasticsearch,bboss es,es bboss,bboss elastic,elastic bboss,elasticsearch bboss,Elasticsearch,jdbc,esdoc,document,lucene,全文检索,highlevel,最佳实践,java rest client api,restclient,rest client,ioc,persistent,taglib,bbossgroups,hessian,cxf,webservice,quartz,activiti,Bboss mvc DEMO列表,事务,ibatis,mybatis,hibernate,资源和文档下载,体系结构图,bboss-mvc请求处理流程图,web.xml部署文件,框架更新记录,session,websocket,redis,mongodb,kafka" />
 <script type='text/javascript'
 	src='${pageContext.request.contextPath}/include/jquery-1.4.2.min.js'
 	language='JavaScript'></script>
@@ -95,8 +95,6 @@
         <div class="github-widget" data-repo="bbossgroups/bboss"></div>
         <br>
 <div class="github-widget" data-repo="bbossgroups/bboss-elastic"></div>
-<div class="github-widget" data-repo="bbossgroups/bboss-http"></div>
-
         <br>
         <div class="github-widget" data-repo="bbossgroups/security"></div>
         <br>
@@ -122,10 +120,9 @@
 </td><td style="vertical-align: top;"><div style="width: auto; max-width: 600px;">
 	<script src='//git.oschina.net/bboss/bboss/widget_preview'></script>
 <script src='//git.oschina.net/bboss/bboss-elastic/widget_preview'></script>
-<script src='//git.oschina.net/bbossgroups/bboss-http/widget_preview'></script>
 	<script src='//git.oschina.net/bboss/security/widget_preview'></script>
 <script src='//git.oschina.net/bboss/bboot/widget_preview'></script>
-<script src='https://gitee.com/bboss/eshelloword-booter/widget_preview'></script>
+<script src='https://gitee.com/bbossgroups/eshelloword-booter/widget_preview'></script>
 
         <script src='//git.oschina.net/bboss/bbootdemo/widget_preview'></script>
 
