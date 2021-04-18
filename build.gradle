@@ -8,7 +8,7 @@ configure(allprojects) { project ->
 	apply plugin: "eclipse"
 	apply plugin: "idea"
 	apply plugin: "signing"
-	apply plugin: "maven"
+	apply plugin: "java-library"
 	apply plugin: "war"
 	eclipse {
 		jdt {
@@ -53,13 +53,13 @@ configure(allprojects) { project ->
 
 
 	dependencies {
-		testCompile 'junit:junit:4.12'
+		testImplementation 'junit:junit:4.12'
 	}
 
 	repositories {
 		mavenLocal()
 		 maven {
-	        url "http://maven.aliyun.com/nexus/content/groups/public"
+	        url "https://maven.aliyun.com/nexus/content/groups/public"
 	    }
 		mavenCentral()
 		
@@ -77,40 +77,23 @@ configure(allprojects) { project ->
  
 configure(allprojects) { subproject ->
 	task sourcesJar(type: Jar) {
-		classifier = "sources"	
+		archiveClassifier = "sources"
 		from sourceSets.main.allJava
+		duplicatesStrategy = DuplicatesStrategy.INCLUDE
 	}
-	
+
 	task javaDocJar(type: Jar, dependsOn: javadoc) {
-		classifier = "javadoc"
+		archiveClassifier = "javadoc"
 		from javadoc.destinationDir
 	}
+	processResources {
+		duplicatesStrategy = DuplicatesStrategy.INCLUDE
+	}
 	artifacts {
-	    archives sourcesJar, javaDocJar
+		archives sourcesJar, javaDocJar
 	}
 	
 } 
-
-uploadArchives {
-	  
-	publishing {
-		publications {
-			mavenJava(MavenPublication) {
-				
-				from components.java
-				
-				artifact sourcesJar
-				artifact javaDocJar
-				
-			}
-		}
-		repositories {
-
-	        mavenLocal()    
-	    }
-		
-	}
-}
 
 sourceSets {
     main {
@@ -134,7 +117,7 @@ sourceSets {
 
 webAppDirName = 'WebRoot'  
 dependencies {
-    compile (
+    api (
     
            	[group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25', transitive: true],
             [group: 'com.bbossgroups', name: 'bboss-data', version: "${bboss_version}", transitive: false],
@@ -226,7 +209,7 @@ dependencies {
  [group: 'javax.servlet', name: 'javax.servlet-api', version: "3.0.1", transitive: false],
           
     )
-     compile ( 
+     api (
          fileTree(dir: 'lib', include: '**/*.jar'),
     	)
 	 
