@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bboss官方网站</title>
+    <meta name="description"
+          content="Bboss官方网站，介绍BBoss特点，bboss模块，bboss开发文档，bboss源码下载，bboss开发案例，bboss开发交流" />
+    <meta name="keywords"
+          content="bboss,mvc,es,elastic,elasticsearch,bboss elasticsearch,bboss es,es bboss,bboss elastic,elastic bboss,elasticsearch bboss,Elasticsearch,jdbc,esdoc,document,lucene,全文检索,highlevel,最佳实践,java rest client api,restclient,rest client,ioc,persistent,taglib,bbossgroups,hessian,cxf,webservice,quartz,activiti,Bboss mvc DEMO列表,事务,ibatis,mybatis,hibernate,资源和文档下载,体系结构图,bboss-mvc请求处理流程图,web.xml部署文件,框架更新记录,session,websocket,redis,mongodb,kafka" />
+    <link rel="shortcut icon" type="image/x-icon" href="./statics/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./statics/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./statics/style.css">
+
+</head>
+<body>
+
+<!--    Menu    -->
+<div class="navbarHeader fixed">
+    <div class="LogoPic">
+        <a href="http://www.bbossgroups.com">
+            <img class="img_responsive_h pic" src="./statics/logoWhite.png" alt="">
+            <img class="img_responsive_h picFixed" src="./statics/logo.png" alt="">
+        </a>
+    </div>
+    <div class="navMenu">
+        <a class="active" href="index.html">首页</a>
+        <a href="docs.html">在线文档</a>
+        <a href="sources.html">源码下载</a>
+       
+        <a href="forum.html">交流反馈</a>
+    </div>
+    <div class="navIcon" onclick="showPopup(&#39;#menuPop&#39;);">
+        <img class="img_responsive pic" src="./statics/burgerWhite.png" alt="">
+        <img class="img_responsive picFixed" src="./statics/burger.png" alt="">
+    </div>
+</div>
+<!--    Main    -->
+<div class="main">
+    <!--    Banner    -->
+    <div class="BannerWrap">
+        <img class="img_responsive" src="./statics/Banner.png" alt="">
+        <div class="nameWrap">
+            <div class="describe">每天进步一点点</div>
+            <div class="introduce">Day-Day-Up</div>
+        </div>
+        <div class="picWrap">
+            <img class="img_responsive" src="./statics/pic_1.png" alt="">
+        </div>
+    </div>
+    <!--    Floor_1    -->
+    <div class="noteWrap">
+        <div class="FloorWrap">
+            <div class="nameWrap">
+                <img class="img_responsive" src="./statics/floor1.png" alt="">
+                <div class="name">Bboss</div>
+            </div>
+            <div class="descWrap">轻量级开发框架</div>
+        </div>
+        <div class="contentWrap">
+            <div class="swiper-container swiper-container-horizontal" id="card">
+            <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-active" style="width: 352px;">
+                        <div class="cardWrap">
+                            <div class="cardPic">
+                                <img class="img_responsive pic" src="./statics/icon1.png" alt="">
+                                <img class="img_responsive picHover" src="./statics/icon1White.png" alt="">
+                            </div>
+                            <div class="cardName">轻量敏捷</div>
+                            <div class="cardDesc" style="height: 138px;">Bboss后端基于Gradle模块化构建，灵活便捷。</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" style="width: 352px;">
+                        <div class="cardWrap">
+                            <div class="cardPic">
+                                <img class="img_responsive pic" src="./statics/icon2.png" alt="">
+                                <img class="img_responsive picHover" src="./statics/icon2White.png" alt="">
+                            </div>
+                            <div class="cardName">模块丰富</div>
+                            <div class="cardDesc" style="height: 138px;">框架模块丰富，涵盖数据同步ETL工具、J2ee开发框架、微服务、数据库、中间件、安全、配置、缓存、国际化、elasticsearch client、web session共享、redis、kafka、mongodb工具包等常用模块，最大程度满开发需要 。</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 352px;">
+                        <div class="cardWrap">
+                            <div class="cardPic">
+                                <img class="img_responsive pic" src="./statics/icon3.png" alt="">
+                                <img class="img_responsive picHover" src="./statics/icon3White.png" alt="">
+                            </div>
+                            <div class="cardName">安全可靠</div>
+                            <div class="cardDesc" style="height: 138px;">源于多个实际的大型企业级应用，并进行充分的封装与优化。严格遵守WEB安全规范，从根本上避免SQL注入、XSS攻击、CSRF攻击等常见的 Web 攻击手段。</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 352px;">
+                        <div class="cardWrap">
+                            <div class="cardPic">
+                                 <img class="img_responsive pic" src="./statics/icon4.png" alt="">
+                                 <img class="img_responsive picHover" src="./statics/icon4White.png" alt="">
+                            </div>
+                            <div class="cardName">微服务架构</div>
+                            <div class="cardDesc" style="height: 138px;">支持主流的分布式微服务架构，快速构建高可用服务集群。</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+    </div>
+	
+	    <!--    Floor_2    -->
+    <div class="noteWrap">
+        <div class="FloorWrap">
+            <div class="nameWrap">
+                <img class="img_responsive" src="./statics/floor1.png" alt="">
+                <div class="name">DataTran</div>
+            </div>
+            <div class="descWrap">基于Java的高性能数据交换工具</div>
+        </div>
+        <div class="contentWrap">
+            <div class="swiper-container swiper-container-horizontal" id="cardTran">
+            <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-active" style="width: 352px;">
+                        <div class="cardWrap">
+                            <div class="cardPic">
+                                <img class="img_responsive pic" src="./statics/icon1.png" alt="">
+                                <img class="img_responsive picHover" src="./statics/icon1White.png" alt="">
+                            </div>
+                            <div class="cardName">轻量便捷</div>
+                            <div class="cardDesc" style="height: 138px;">基于java开发的ETL工具，实时增量/全量数据采集、处理、入库，采用java语言开发数据同步作业，小巧精致；提供丰富的同步作业案例；作业可调试可监控</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" style="width: 352px;">
+                        <div class="cardWrap">
+                            <div class="cardPic">
+                                <img class="img_responsive pic" src="./statics/icon2.png" alt="">
+                                <img class="img_responsive picHover" src="./statics/icon2White.png" alt="">
+                            </div>
+                            <div class="cardName">插件丰富</div>
+                            <div class="cardDesc" style="height: 138px;">支持关系数据库/Mongodb/Elasticsearch/Kafka/Hbase/本地文件/Ftp/sftp日志/excel/csv文件数据采集同步</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 352px;">
+                        <div class="cardWrap">
+                            <div class="cardPic">
+                                <img class="img_responsive pic" src="./statics/icon3.png" alt="">
+                                <img class="img_responsive picHover" src="./statics/icon3White.png" alt="">
+                            </div>
+                            <div class="cardName">可扩展性</div>
+                            <div class="cardDesc" style="height: 138px;">提供简单灵活的自定义插件机制，提供高效的并行数据采集和并行入库能力，支持海量数据同步；支持实时增量、全量数据采集；支持增删改数据同步</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 352px;">
+                        <div class="cardWrap">
+                            <div class="cardPic">
+                                 <img class="img_responsive pic" src="./statics/icon4.png" alt="">
+                                 <img class="img_responsive picHover" src="./statics/icon4White.png" alt="">
+                            </div>
+                            <div class="cardName">作业调度可监控</div>
+                            <div class="cardDesc" style="height: 138px;">提供丰富的作业调度机制：jdk timer、quartz、xxl-job，可以方便地扩展致其他调度引擎;作业可独立运行、可以嵌入应用运行；可在线控制作业启停</div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+    </div>
+    <!--    Floor_3    -->
+    <div class="noteWrap">
+        <div class="FloorWrap">
+            <div class="nameWrap">
+                <img class="img_responsive" src="./statics/floor2.png" alt="">
+                <div class="name">EleasticClient</div>
+            </div>
+            <div class="descWrap">基于Java的高性能Elasticsearch RestClient</div>
+        </div>
+        <div class="contentWrap">
+            <div class="picWrap">
+                <img class="img_responsive" src="./statics/pic_2.png" alt="">
+            </div>
+            <div class="listWrap">
+                <div class="listName">卓越的产品特性</div>
+                <ul class="clearfix">
+                    <li>
+                        <i class="purpleBg">1</i>
+                        <span class="listText">业界兼容性最好的Elasticsearch Client，兼容spring boot各版本，兼容Elasticsearch 1.x,2.x，5.x，6.x，7.x,8.x,+</span>
+                    </li>
+                    <li>
+                        <i class="orangeBg">2</i>
+                        <span class="listText">具备良好的并发性能，提供客户端点到点自动负载均衡、异步批处理能力</span>
+                    </li>
+                    <li>
+                        <i class="blueBg">3</i>
+                        <span class="listText">提供丰富的开发案例和文档。</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	
+	 <!--    Floor_4    -->
+    <div class="noteWrap">
+        <div class="FloorWrap">
+            <div class="nameWrap">
+                <img class="img_responsive" src="./statics/floor2.png" alt="">
+                <div class="name">Http-Proxy</div>
+            </div>
+            <div class="descWrap">基于Http协议的轻量级高性能微服务负载均衡器</div>
+        </div>
+        <div class="contentWrap">
+            <div class="picWrap">
+                <img class="img_responsive" src="./statics/pic_2.png" alt="">
+            </div>
+            <div class="listWrap">
+                <div class="listName">卓越的服务特性</div>
+                <ul class="clearfix">
+                    <li>
+                        <i class="purpleBg">1</i>
+                        <span class="listText">提供良好的http rpc api，像调用本地方法一样调用http restful服务</span>
+                    </li>
+                    <li>
+                        <i class="orangeBg">2</i>
+                        <span class="listText">具备良好的并发性能，提供客户端点到点自动负载均衡能力</span>
+                    </li>
+                    <li>
+                        <i class="blueBg">3</i>
+                        <span class="listText">支持服务健康监察机制，支持容灾、故障恢复</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	
+	 <!--    Floor_4    -->
+    <div class="noteWrap">
+        <div class="FloorWrap">
+            <div class="nameWrap">
+                <img class="img_responsive" src="./statics/floor2.png" alt="">
+                <div class="name">SessionShare</div>
+            </div>
+            <div class="descWrap">基于java的web session共享框架</div>
+        </div>
+        <div class="contentWrap">
+            <div class="picWrap">
+                <img class="img_responsive" src="./statics/pic_2.png" alt="">
+            </div>
+            <div class="listWrap">
+                <div class="listName">卓越特性</div>
+                <ul class="clearfix">
+                    <li>
+                        <i class="purpleBg">1</i>
+                        <span class="listText">支持跨站跨域session共享</span>
+                    </li>
+                    <li>
+                        <i class="orangeBg">2</i>
+                        <span class="listText">支持redis、mongodb存储session数据</span>
+                    </li>
+                    <li>
+                        <i class="blueBg">3</i>
+                        <span class="listText">提供应用session监控功能。</span>
+                    </li>
+					<li>
+                        <i class="orangeBg">4</i>
+                        <span class="listText">提供丰富的开发案例。</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    Footer    -->
+<div class="Footer">
+    <div class="codeWrap">
+        <span class="imgBox"><img class="img_responsive" src="./statics/code.png" alt=""></span>
+        <span class="textBox">微信公众号</span>
+    </div>
+    <div class="logoWrap"><img class="img_responsive" src="./statics/logoWhite.png" alt=""></div>
+    <div class="textWrap">
+        <span class="dis_block">© 2005-2022@bbossgroups.com</span>
+        <span class="dis_block">				<script type="text/javascript">
+					try {
+                        document.write(unescape("%3Cspan id='cnzz_stat_icon_1254131450'%3E%3C/span%3E%3Cscript src='https://s11.cnzz.com/z_stat.php%3Fid%3D1254131450%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+                    }
+                    catch (e) {
+						console.log(e);
+                    }
+				</script><a href="https://beian.miit.gov.cn/" target="_blank">湘ICP备16000994号-1</a> </span>
+    </div>
+</div>
+
+<!-- 遮罩 -->
+<div class="Shade"></div>
+
+<!-- 菜单弹层 -->
+<div class="menuPop conceal" id="menuPop">
+    <div class="popupTop">
+        <a href="http://www.bbossgroups.com" class="LogoPic">
+            <img class="img_responsive_h" src="./statics/logo.png" alt="">
+        </a>
+        <span class="colseBtn" onclick="closePopup(&#39;#menuPop&#39;);"><img class="img_responsive" src="./statics/colse.png" alt=""></span>
+    </div>
+    <div class="popupNote">
+        <ul class="menuList">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="docs.html">在线文档</a></li>
+            <li><a href="sources.html">源码下载</a></li>
+            <li><a href="forum.html">交流反馈</a></li>
+        </ul>
+    </div>
+</div>
+
+<script language="javascript" type="text/javascript" src="./statics/jquery-1.11.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="./statics/swiper.min.js"></script>
+<script language="javascript" type="text/javascript" src="./statics/config.js"></script>
+
+
+
+</body></html>

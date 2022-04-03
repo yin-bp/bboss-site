@@ -1,0 +1,845 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:not(input,textarea){
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+*, ::after, ::before{
+    box-sizing: inherit;
+}
+table, img, fieldset, iframe{
+    border: 0 none;
+}
+img{
+    vertical-align: middle;
+}
+ul, li{
+    list-style-type: none;
+}
+input, select{
+    vertical-align: middle;
+    border: 0 none;
+    outline: none;
+}
+a, a:hover, button{
+    text-decoration: none;
+    color: white;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+i, em{
+    font-style: normal;
+}
+html, body{
+    position: relative;
+    height: 100%;
+}
+body{
+    font-family: Avenir,sans-serif,PingFang SC,Microsoft YaHei,ST Heiti,SimHei;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 400;
+    word-wrap: break-word;
+    background-color: #FFF;
+    background-image: url("Bg.png");
+    background-position: left top;   
+    background-size: 100%;
+}
+/* 滚动条 */
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(50, 50, 50, 0.3);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(50, 50, 50, 0.6);
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(50, 50, 50, 0.1);
+}
+::-webkit-scrollbar-track:hover{
+    background-color: rgba(50, 50, 50, 0.2);
+}
+.clearfix:after{
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: '.';
+}
+.clearfix{
+    *+height: 1%;
+    *zoom: 1;
+    _zoom: 1;
+}
+.img_responsive{
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.img_responsive_h{
+    display: inline-block;
+    height: 100%;
+    max-height: 100%;
+    width: auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.pos_rel{
+    position: relative;
+}
+.pos_abs{
+    position: absolute;
+}
+.center{
+    text-align: center;
+}
+.dis_block{
+    display: block;
+}
+.pdT{
+    padding-top: 60px;
+}
+.mrgT1{
+    margin-top: 10px;
+}
+.textIn{
+    text-indent: 30px;
+}
+/* Menu */
+.navbarHeader{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.navbarHeader .LogoPic{
+    float: left;
+    height: 40px;
+    margin: 10px 0 10px 5%;
+}
+.navbarHeader .LogoPic .picFixed{
+    display: none;
+}
+.navbarHeader .navMenu{
+    float: right;
+    margin: 15px 5% 15px 0;
+    line-height: 30px;
+}
+.navbarHeader .navMenu a{
+    float: left;
+    margin: 0 25px;
+    padding: 0 2px;
+    font-size: 1.25em;
+    color: #FFF;
+    opacity: .5;
+}
+.navbarHeader .navMenu a.active{
+    opacity: 1;
+}
+.navbarHeader .navMenu a:hover{
+    opacity: 1;
+    border-bottom: #FFF 1px solid;
+}
+.navbarHeader .navIcon{
+    display: none;
+}
+.navbarHeader.fixed, .navbarHeader.fix{
+    overflow: inherit;
+    background-color: #FFF;
+    border-bottom: #CDCDD0 1px solid;
+}
+.navbarHeader.fixed .LogoPic .pic, .navbarHeader.fix .LogoPic .pic{
+    display: none;
+}
+.navbarHeader.fixed .LogoPic .picFixed, .navbarHeader.fix .LogoPic .picFixed{
+    display: inline-block;
+}
+.navbarHeader.fixed .navMenu a, .navbarHeader.fix .navMenu a{
+    color: #A5A5A5;
+    opacity: 1;
+}
+.navbarHeader.fixed .navMenu a.active, .navbarHeader.fix .navMenu a.active{
+    color: #F08124;
+}
+.navbarHeader.fixed .navMenu a:hover, .navbarHeader.fix .navMenu a:hover{
+    color: #F08124;
+    border-bottom-color: #F08124;
+}
+/* Main */
+.main{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.BannerWrap{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.BannerWrap .nameWrap{
+    display: block;
+    color: #FFF;
+    position: absolute;
+    left: 8%;
+    top: 25%;
+}
+.BannerWrap .nameWrap .describe{
+    display: block;
+    font-size: 5em;
+}
+.BannerWrap .nameWrap .introduce{
+    display: block;
+    margin-top: 1%;
+    font-size: 3.6em;
+    text-transform: uppercase;
+}
+.BannerWrap .picWrap{
+    display: block;
+    width: 60%;
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+}
+/* 内容区域 */
+.noteWrap{
+    width: 100%;
+    display: block;
+    margin: 4% auto;
+    overflow: hidden;
+}
+.noteWrap .nameWrap{
+    display: block;
+    width: 25%;
+    margin: 2% auto 0;
+    position: relative;
+}
+.noteWrap .nameWrap .name{
+    color: #2A2A2A;
+    font-size: 3.4em;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 0;
+    top: 12%;
+}
+.noteWrap .descWrap{
+    display: block;
+    width: 65%;
+    margin: 1% auto 0;
+    color: #8A8A8A;
+    font-size: 1.25em;
+    text-align: center;
+}
+.noteWrap .contentWrap{
+    width: 92%;
+    display: block;
+    margin: 2% auto 0;
+    overflow: hidden;
+}
+/* Card */
+.cardWrap{
+    display: block;
+    margin: 10px 25px;
+    padding: 25px;
+    background-color: #FFF;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 2px 10px 5px #EEE;
+    -moz-box-shadow: 0px 2px 10px 5px #EEE;
+    box-shadow: 0px 2px 10px 5px #EEE;
+}
+.cardWrap .cardPic{
+    width: 40%;
+    display: block;
+    margin: 20px auto 30px;
+}
+.cardWrap .cardName{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    color: #2A2A2A;
+    font-size: 1.9em;
+    text-align: center;
+}
+.cardWrap .cardDesc{
+    width: 94%;
+    display: block;
+    margin: 15px auto 10px;
+    color: #8A8A8A;
+    font-size: 1.1em;
+    line-height: 1.8;
+    overflow: hidden;
+}
+.cardWrap .picHover{
+    display: none;
+}
+.cardWrap:hover{
+    background-color: #3A82E3;
+    background: -webkit-linear-gradient(#3A82E3, #3AC1E3);
+    background: -o-linear-gradient(#3A82E3, #3AC1E3);
+    background: -moz-linear-gradient(#3A82E3, #3AC1E3);
+    background: linear-gradient(#3A82E3, #3AC1E3);
+}
+.cardWrap:hover .cardName, .cardWrap:hover .cardDesc{
+    color: #FFF;
+}
+.cardWrap:hover .pic{
+    display: none;
+}
+.cardWrap:hover .picHover{
+    display: inline-block;
+}
+/* Pic */
+.contentWrap .picWrap{
+    width: 32%;
+    float: left;
+    margin: 5% 0 0 5%;
+    overflow: hidden;
+}
+/* List */
+.listWrap{
+    width: 40%;
+    float: left;
+    margin: 4% 0 0 8%;
+    overflow: hidden;
+}
+.listWrap .listName{
+    display: block;
+    color: #2A2A2A;
+    font-size: 1.8em;
+    line-height: 1.8;
+}
+.listWrap li{
+    display: block;
+    margin-top: 20px;
+    padding-left: 45px;
+    color: #8A8A8A;
+    font-size: 1.15em;
+    line-height: 1.8;
+    position: relative;
+}
+.listWrap i{
+    float: left;
+    width: 32px;
+    height: 32px;
+    font-size: 1.25em;
+    color: #FFF;
+    font-weight: 600;
+    text-align: center;
+    line-height: 32px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.listWrap i.purpleBg{
+    background-color: #9F8BF8;
+}
+.listWrap i.orangeBg{
+    background-color: #FC9E2A;
+}
+.listWrap i.blueBg{
+    background-color: #45C1F7;
+}
+.listWrap .listText{
+    display: block;
+}
+/* Footer */
+.Footer{
+    width: 100%;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+    background-color: #3E64F5;
+    background: -webkit-linear-gradient(left, #3E64F5, #23026D);
+    background: -o-linear-gradient(left, #3E64F5, #23026D);
+    background: -moz-linear-gradient(left, #3E64F5, #23026D);
+    background: linear-gradient(left, #3E64F5, #23026D);
+    position: relative;
+}
+.Footer .codeWrap{
+    width: 60px;
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.Footer .codeWrap .imgBox{
+    display: block;
+    background-color: #FFF;
+    padding: 2px;
+}
+.Footer .codeWrap .textBox{
+    display: block;
+    margin-top: 4px;
+    color: #FFF;
+    font-size: .85em;
+}
+.Footer .logoWrap{
+    width: 180px;
+    display: block;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.Footer .textWrap{
+    width: 320px;
+    display: block;
+    color: #FFF;
+    font-size: .95em;
+    line-height: 1.8;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align:center
+}
+/* 遮罩层 */
+.Shade{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -ms-filter: "alpha(opacity=50)";
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    z-index: 1111;
+    display: none;
+}
+/* 菜单弹层 */
+.menuPop{
+    width: 240px;
+    height: 100%;
+    background-color: #FFF;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1119;
+}
+.menuPop .popupTop{
+    width: 100%;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 10px 0 10px 15px;
+    overflow: hidden;
+}
+.menuPop .popupTop .LogoPic{
+    float: left;
+    height: 30px;
+    overflow: hidden;
+}
+.menuPop .colseBtn{
+    float: right;
+    width: 20px;
+    margin: 6px 30px 0 0;
+    cursor: pointer;
+}
+.menuPop .popupNote{
+    width: 98%;
+    display: block;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.menuPop .menuList{
+    float: left;
+    padding: 20px 15px;
+    overflow: hidden;
+}
+.menuPop .menuList li{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.45em;
+}
+.menuPop .menuList li a{
+    color: #A5A5A5;
+}
+.menuPop .menuList li a:hover{
+    color: #F08124;
+}
+/* 弹出层效果 */
+.menuPop.conceal{
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    transform-origin: 0px 0px;
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    -o-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    transform: translate(100%, 0);
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    opacity: 0;
+}
+.menuPop.show{
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    transform-origin: 0px 0px;
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    -o-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    opacity: 1;
+}
+/* 其他页面样式 */
+.PageBg{
+    background-color: #F8F8F8;
+}
+/* 下载页面 */
+.downloadWrap{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.downloadWrap .downloadBtn{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+.downloadWrap .downloadEdition{
+    display: block;
+    margin-top: 2%;
+    font-size: 1.2em;
+    color: #000;
+    text-align: center;
+}
+.downloadWrap .downloadEdition span{
+    margin: 0 8px;
+}
+/* 文档页面 */
+.docWrap{
+    width: 86%;
+    display: block;
+    margin: 6% auto;
+    overflow: hidden;
+}
+.docWrap .docTitle{
+    display: block;
+    padding-bottom: 10px;
+    color: #666;
+    font-size: 1.7em;
+    overflow: hidden;
+}
+.docWrap .docNote{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.docWrap .docBox{
+    display: block;
+    background-color: #FFF;
+    border: #E4E4E4 1px solid;
+    overflow: hidden;
+}
+.docWrap .docBox.two{
+    width: 49%;
+}
+.docWrap .docBox.two:first-child{
+    float: left;
+}
+.docWrap .docBox.two:last-child{
+    float: right;
+}
+.docWrap .docBox.three{
+    width: 32%;
+    float: left;
+}
+.marP1{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+.docWrap .docBox .nameBox{
+    display: block;
+    padding: 10px 0;
+    background-color: #F5F5F5;
+    border-bottom: #E4E4E4 1px solid;
+    color: #000;
+    font-size: 1.1em;
+    text-align: center;
+    overflow: hidden;
+}
+.docWrap .docBox .noteBox{
+    padding: 6%;
+    display: block;
+    color: #919298;
+    font-size: 1em;
+    line-height: 1.8;
+}
+.docWrap .docBox .noteBox .textNote{
+    display: block;
+    overflow: hidden;
+    min-height: 110px;
+}
+.docWrap .docBox .docBtn{
+    width: 160px;
+    height: 40px;
+    display: block;
+    margin: 10% auto 0;
+    background-color: #3e64f5;
+    color: #FFF;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 40px;
+     -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.docWrap .docBox .fileIcon{
+    float: left;
+    width: 18%;
+    margin: 8% 6% 8% 12%;
+}
+.docWrap .docBox .fileRight{
+    float: left;
+    width: 60%;
+    margin: 11% 0 0 0;
+}
+.docWrap .docBox .fileName{
+    display: block;
+    color: #000;
+    font-size: 1.05em;
+}
+.docWrap .docBox .fileTime{
+    display: block;
+    margin-top: 1%;
+    color: #919298;
+    font-size: .9em;
+}
+
+/* 屏幕适配 */
+@media only screen and (min-width:320px) and (max-width:1023px){
+    .navbarHeader{
+        height: 50px;
+    }
+    .navbarHeader .LogoPic{
+        height: 30px;
+    }
+    .navbarHeader .navMenu{
+        display: none;
+    }
+    .navbarHeader .navIcon{
+        display: block;
+        width: 36px;
+        float: right;
+        margin: 13px 15px 0 0;
+    }
+    .navbarHeader .navIcon .picFixed{
+        display: none;
+    }
+    .navbarHeader.fixed .navIcon .pic, .navbarHeader.fix .navIcon .pic{
+        display: none;
+    }
+    .navbarHeader.fixed .navIcon .picFixed, .navbarHeader.fix .navIcon .picFixed{
+        display: inline-block;
+    }
+    .BannerWrap .nameWrap{
+        top: 40%;
+    }
+    .BannerWrap .picWrap{
+        width: 55%;
+        bottom: -5%;
+    }
+    .noteWrap{
+        margin-top: 8%;
+    }
+    .noteWrap .nameWrap{
+        width: 50%;
+    }
+    #card.swiper-container{
+        padding-bottom: 15px;
+        overflow: visible;
+    }
+    #card .swiper-pagination{
+        bottom: -5px;
+    }
+    #card .swiper-pagination-bullet{
+        background: #A5A5A5;
+        opacity: 1;
+    }
+    #card .swiper-pagination-bullet-active{
+        background: #F08124;
+    }
+    .cardWrap{
+        margin: 10px 5px;
+        padding: 20px 15px;
+    }
+    .cardWrap .cardName{
+        font-size: 1.45em;
+    }
+    .contentWrap .picWrap{
+        width: 58%;
+        display: block;
+        margin: 8% auto 0;
+        float: none;
+    }
+    .listWrap{
+        width: 88%;
+        display: block;
+        margin: 8% auto 0;
+        float: none;
+    }
+    .listWrap li{
+        font-size: 1em;
+    }
+    .downloadWrap .downloadBtn{
+        width: 240px;
+    }
+    .downloadWrap .downloadEdition{
+        margin-top: 5%;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:640px){
+    .Footer{
+        width: auto;
+        height: auto;
+        padding: 20px 20px 10px;
+        position: static;
+    }
+    .Footer .codeWrap{
+        float: right;
+        margin-right: 15px;
+        position: static;
+        transform: none;
+    }
+    .Footer .logoWrap{
+        float: left;
+        margin: 20px 20px 0 0;
+        position: static;
+    }
+    .Footer .textWrap{
+        float: left;
+        position: static;
+        transform: none;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:749px){
+    .BannerWrap .nameWrap .describe{
+        font-size: 1.54em;
+    }
+    .BannerWrap .nameWrap .introduce{
+        font-size: 1.24em;
+    }
+    .noteWrap .nameWrap .name{
+        font-size: 2.2em;
+        top: 8%;
+    }
+    .noteWrap .descWrap{
+        font-size: 1.1em;
+        width: 85%;
+        margin-top: 4%;
+    }
+    .docWrap .docTitle{
+        font-size: 1.4em;
+    }
+    .docWrap .docBox.two, .docWrap .docBox.three{
+        width: 99%;
+        margin-bottom: 5%;
+    }
+    .marP1{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .docWrap .docBox .noteBox .textNote{
+        min-height: auto;
+    }
+}
+@media only screen and (min-width:750px) and (max-width:1023px){
+    .BannerWrap .nameWrap .describe{
+        font-size: 3em;
+    }
+    .BannerWrap .nameWrap .introduce{
+        font-size: 2.6em;
+    }
+    .docWrap .docBox.two{
+        width: 47%;
+    }
+    .docWrap .docBox.three{
+        width: 47%;
+        margin-bottom: 5%;
+    }
+    .docWrap .docBox.three:nth-child(2){
+        float: right;
+    }
+    .marP1{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .docWrap .docBox .noteBox .textNote{
+        min-height: 160px;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1365px){
+    .BannerWrap .nameWrap .describe{
+        font-size: 4.2em;
+    }
+    .BannerWrap .nameWrap .introduce{
+        font-size: 3.4em;
+    }
+}
