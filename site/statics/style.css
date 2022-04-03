@@ -9,8 +9,8 @@
     box-sizing: border-box;
 }
 *:not(input,textarea){
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
+    -webkit-touch-callout: default;
+    -webkit-user-select: auto;
 }
 *, ::after, ::before{
     box-sizing: inherit;
