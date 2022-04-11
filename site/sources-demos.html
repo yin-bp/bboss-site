@@ -1,5 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0fa35dc5d688622619f179a06a118681";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
@@ -42,8 +51,32 @@
 <!--    Main    -->
 <div class="main PageBg" style="min-height: 566px;">
     <div class="pdT clearfix">
+		 <div class="docWrap">
+            <div class="docTitle">数据交换ETL案例大全</div>
+            <div class="docNote">
+				<div class="docBox two">
+                    <div class="nameBox">数据交换ETL案例大全介绍</div>
+                    <div class="noteBox">
+                        <span class="textNote textIn">可以先浏览下面的文档，了解不同的数据同步作业案例，然后参考案例实现自己的同步数据作业，不同的案例包含在不同的案例源码工程中，可以从数据交换案例源码工程清单中下载相关案例，体验实际的数据同步功能</span>
+						
+                        <a class="docBtn" href="https://esdoc.bbossgroups.com/#/bboss-datasyn-demo" target="_blank">数据交换ETL案例大全</a>
+                    </div>
+                </div>
+                <div class="docBox two">
+                    <div class="nameBox">数据交换案例源码工程</div>
+                    <div class="noteBox">
+                        <span class="textNote textIn">不同的案例包含在不同的案例源码工程中，可以从数据交换案例源码工程清单中下载相关案例，体验实际的数据同步功能</span>
+						<a class="docBtn" href="#sources-project">数据交换案例源码工程</a>
+                       
+                    </div>
+                </div>
+				
+              
+            </div>
+        </div> 
+
         <div class="docWrap">
-            <div class="docTitle">BBOSS数据交换</div>
+            <div class="docTitle" ><a name="sources-project" id="sources-project"></a>BBOSS数据交换案例源码工程</div>
             <div class="docNote">
                 <div class="docBox two">
                     <script src='https://git.oschina.net/bboss/db-elasticsearch-tool/widget_preview'></script>
@@ -78,17 +111,17 @@
             </div>
 			<div class="docNote">
                 <div class="docBox two">
+                    <script src='https://git.oschina.net/bboss/elasticsearch-elasticsearch/widget_preview'></script>
+                </div><div class="docBox two">
                     <script src='https://git.oschina.net/bboss/springboot-elasticsearch/widget_preview'></script>
                 </div>
-              <div class="docBox two">
-                    <script src='https://git.oschina.net/bboss/db-db-job/widget_preview'></script>
-                </div>
+
 
 
             </div>			
 			<div class="docNote">
                 <div class="docBox two">
-                    <script src='https://git.oschina.net/bboss/elasticsearch-elasticsearch/widget_preview'></script>
+                    <script src='https://git.oschina.net/bboss/db-db-job/widget_preview'></script>
                 </div>
                
 				 <div class="docBox two">
@@ -213,10 +246,19 @@
                 as1.each(function (element) {
                     as1[element].setAttribute("target", "_blank");
                 });
+
             };
             setTimeout(handleA,10);
 
         });
+    let imgs = $("img");
+    imgs.each(function (element) {
+        let src = imgs[element].getAttribute("src");
+        if(src.indexOf("logo-en.svg") > 0){
+            imgs[element].setAttribute("src", "statics/favicon.png");
+        }
+    });
 </script>
+
 
 </body></html>
