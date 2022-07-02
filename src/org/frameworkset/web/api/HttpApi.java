@@ -18,6 +18,8 @@ package org.frameworkset.web.api;
 import com.frameworkset.util.SimpleStringUtil;
 import org.frameworkset.util.annotations.RequestBody;
 import org.frameworkset.util.annotations.ResponseBody;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
@@ -30,7 +32,7 @@ import java.util.*;
  * @version 1.0
  */
 public class HttpApi {
-
+	private static Logger logger = LoggerFactory.getLogger(HttpApi.class);
 	public static void main(String[] args){
 		System.out.println(51000 / 50);
 	}
@@ -82,4 +84,15 @@ public class HttpApi {
 		}
 		return datas;
 	}
+
+	/**
+	 * 分页http服务
+	 * @return
+	 */
+	public @ResponseBody String sendData(@RequestBody String data){
+		logger.info(data);
+		return "success";
+	}
+
+
 }
