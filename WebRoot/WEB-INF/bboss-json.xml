@@ -33,7 +33,12 @@
     	name="/json/*.html" 
     	class="org.frameworkset.web.http.converter.json.JsonController" singlable="true">
     </property>
-    
+
+	<property
+			name="/httpservice/*.api"
+			class="org.frameworkset.web.api.HttpApi" >
+	</property>
+
     
 
 </properties>

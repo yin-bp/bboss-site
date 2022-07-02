@@ -209,7 +209,10 @@
 		<servlet-name>mvcdispather</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
-
+	<servlet-mapping>
+		<servlet-name>mvcdispather</servlet-name>
+		<url-pattern>*.api</url-pattern>
+	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>mvcdispather</servlet-name>
 		<url-pattern>*.page</url-pattern>
