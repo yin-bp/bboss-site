@@ -39,6 +39,9 @@
 			class="org.frameworkset.web.api.HttpApi" >
 	</property>
 
-    
+	<property
+			name="/api/auth/v1.0/*.api"
+			class="org.frameworkset.web.api.TokenApi" >
+	</property>
 
 </properties>
