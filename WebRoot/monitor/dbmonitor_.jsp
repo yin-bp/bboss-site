@@ -480,8 +480,8 @@
 						</td>
 						</tr>
 						<tr>
-						<td>encryptdbinfo</td>
-						<td height="25"><%=metadata.isEncryptdbinfo() %></td>
+						<td>dbInfoEncryptClass</td>
+						<td height="25"><%=metadata.getDbInfoEncryptClass() %></td>
 						<td>false</td>
 						<td>是否加密数据库信息，包括url，useraccount,password,提供以下插件：
 						
