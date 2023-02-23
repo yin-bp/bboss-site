@@ -18,7 +18,7 @@ var _hmt = _hmt || [];
     <meta name="description"
           content="Bboss官方网站，介绍BBoss特点，bboss模块，bboss开发文档，bboss源码下载，bboss开发案例，bboss开发交流" />
     <meta name="keywords"
-          content="bboss,mvc,es,elastic,elasticsearch,bboss elasticsearch,bboss es,es bboss,bboss elastic,elastic bboss,elasticsearch bboss,Elasticsearch,jdbc,esdoc,document,lucene,全文检索,highlevel,最佳实践,java rest client api,restclient,rest client,ioc,persistent,taglib,bbossgroups,hessian,cxf,webservice,quartz,activiti,Bboss mvc DEMO列表,事务,ibatis,mybatis,hibernate,资源和文档下载,体系结构图,bboss-mvc请求处理流程图,web.xml部署文件,框架更新记录,session,websocket,redis,mongodb,kafka" />
+          content="bboss,mvc,es,elastic,elasticsearch,bboss elasticsearch,bboss es,es bboss,bboss elastic,elastic bboss,elasticsearch bboss,Elasticsearch,jdbc,esdoc,document,lucene,全文检索,highlevel,最佳实践,java rest client api,restclient,rest client,ioc,persistent,taglib,bbossgroups,hessian,cxf,webservice,quartz,activiti,Bboss mvc DEMO列表,事务,ibatis,mybatis,hibernate,资源和文档下载,体系结构图,bboss-mvc请求处理流程图,web.xml部署文件,框架更新记录,session,websocket,redis,mongodb,kafka,流批一体,流处理,批处理,etl,数据采集&流批一体化处理" />
     <link rel="shortcut icon" type="image/x-icon" href="./statics/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="./statics/swiper.min.css">
@@ -123,9 +123,9 @@ var _hmt = _hmt || [];
         <div class="FloorWrap">
             <div class="nameWrap">
                 <img class="img_responsive" src="./statics/floor1.png" alt="">
-                <div class="name">DataTran</div>
+                <div class="name">DataTran-Stream</div>
             </div>
-            <div class="descWrap">基于Java的高性能数据交换工具，基于Apache License 2.0开源</div>
+            <div class="descWrap">基于Java的高性能数据交换及流批一体化大数据分析工具，基于Apache License 2.0开源</div>
         </div>
         <div class="contentWrap">
             <div class="swiper-container swiper-container-horizontal" id="cardTran">
@@ -140,6 +140,26 @@ var _hmt = _hmt || [];
                             <div class="cardDesc" style="height: 138px;">基于java开发的ETL工具，支持实时增量/全量数据采集、处理、入库，采用java语言开发数据同步作业，小巧精致；提供丰富的同步作业案例；作业可调试可监控</div>
                         </div>
                     </div>
+                <div class="swiper-slide swiper-slide-active" style="width: 352px;">
+                    <div class="cardWrap">
+                        <div class="cardPic">
+                            <img class="img_responsive pic" src="./statics/icon1.png" alt="">
+                            <img class="img_responsive picHover" src="./statics/icon1White.png" alt="">
+                        </div>
+                        <div class="cardName">流批一体化</div>
+                        <div class="cardDesc" style="height: 138px;">1) 支持时间维度和非时间维度指标计算
+
+                            2) 时间维度指标计算：支持指定统计滑动时间窗口，支持设定时间统计窗口类型，在流处理或者离线处理过程中，对于数据到来的先后顺序没有严格要求，乱序数据不影响最终指标计算结果
+
+                            3) 一个指标支持多个维度和多个度量字段计算，多个维度字段值构造成指标的唯一指标key，支持有限基数key和无限基数key指标计算（维度字段组合形成的唯一指标key的个数是有限的就是有限基数，个数是无限的就是无限基数）
+
+                            4) 一个作业可以支持多种类型的指标，每种类型指标支持多个指标计算
+
+                            5）支持准实时指标统计计算和离线指标统计计算
+
+                            6）可以从不同的数据输入来源获取需要统计的指标数据，亦可以将指标计算结果保存到各种不同的目标数据源</div>
+                    </div>
+                </div>
                     <div class="swiper-slide swiper-slide-next" style="width: 352px;">
                         <div class="cardWrap">
                             <div class="cardPic">
