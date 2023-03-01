@@ -36,6 +36,8 @@ public class ApiBean {
 	private int size;
 	private String otherParam;
 
+    private boolean debugError;
+
 	public Date getLogTime() {
 		return logTime;
 	}
@@ -75,4 +77,13 @@ public class ApiBean {
 	public void setOtherParam(String otherParam) {
 		this.otherParam = otherParam;
 	}
+
+    public boolean isDebugError() {
+        return debugError;
+    }
+
+    public void setDebugError(boolean debugError) {
+        this.debugError = debugError;
+    }
+
 }

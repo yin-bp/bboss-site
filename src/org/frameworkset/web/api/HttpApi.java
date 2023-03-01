@@ -63,13 +63,16 @@ public class HttpApi {
 	}
 
 	/**
-	 * 分页http服务
+	 * 数据服务
 	 * @return
 	 */
 	public @ResponseBody
 	List<Map> getData(@RequestBody ApiBean apiBean){
 //		ApiBean apiBean = SimpleStringUtil.json2Object(parmas,ApiBean.class);
 
+        if(apiBean != null && apiBean.isDebugError()){
+            throw new RuntimeException("isDebugError");
+        }
 		List<Map> datas =  new ArrayList<>();
 		for(int i = 0; i < 100; i ++){
 			Map data = new LinkedHashMap();
