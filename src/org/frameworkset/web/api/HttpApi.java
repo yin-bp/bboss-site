@@ -46,6 +46,8 @@ public class HttpApi {
 //		ApiBean apiBean = SimpleStringUtil.json2Object(parmas,ApiBean.class);
 
 		List<Map> datas =  new ArrayList<>();
+        if(apiBean != null)
+            logger.info("getFrom:{},apiBean.getSize():{}",apiBean.getFrom(),apiBean.getSize());
 		if(apiBean.getFrom() > 0 && (apiBean.getFrom() / apiBean.getSize()) == 10)//返回空集合，模拟结束分页查询
 			return datas;
 		for(int i = 0; i < apiBean.getSize(); i ++){
@@ -73,6 +75,8 @@ public class HttpApi {
         if(apiBean != null && apiBean.isDebugError()){
             throw new RuntimeException("isDebugError");
         }
+        if(apiBean != null)
+            logger.info("logTime:{},logEndTime:{}",apiBean.getLogTime(),apiBean.getLogTimeEndTime());
 		List<Map> datas =  new ArrayList<>();
 		for(int i = 0; i < 100; i ++){
 			Map data = new LinkedHashMap();
