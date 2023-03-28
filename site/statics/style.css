@@ -587,10 +587,23 @@ body{
     font-size: 1.7em;
     overflow: hidden;
 }
+
+.docWrap .docTitle .support{
+    display: block;
+    padding-bottom: 10px;
+    color: blue;
+    font-size: 1.7em;
+    overflow: hidden;
+}
 .docWrap .docNote{
     width: 100%;
     display: block;
     overflow: hidden;
+}
+
+.docWrap .docNote .support a {
+    color: blue;
+	font-size: 1.7em;
 }
 .docWrap .docBox{
     display: block;
@@ -795,8 +808,10 @@ body{
         width: 85%;
         margin-top: 4%;
     }
-    .docWrap .docTitle{
-        font-size: 1.4em;
+    .docWrap .docTitle .support {
+        font-size: 1.4em;		
+		color: blue;
+		
     }
     .docWrap .docBox.two, .docWrap .docBox.three{
         width: 99%;
