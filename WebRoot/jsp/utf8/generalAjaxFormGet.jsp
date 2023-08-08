@@ -4,14 +4,14 @@
  * @Package WebRoot/demo/formsubmint/
  * @Description TODO(普通ajax方法提交数据)  
  * @Copyright:Copyright (c) 2012
- * @Company: 湖南科创
+ * @Company: bboss
  * @author: yahui.hu 
  * @Date:2012-01-07
  * 
  */
  %>
 <%@ page language="java"  pageEncoding="utf-8"%>
-<%@page import="com.chinacreator.security.AccessControl"%>
+<%@page import="com.bboss.security.AccessControl"%>
 <%@ include file="/common/jsp/accessControl.jsp"%>
 <%@ include file="/common/jsp/importAndTaglib.jsp"%>
 <%@ taglib prefix="tab" uri="/WEB-INF/tabpane-taglib.tld"%>

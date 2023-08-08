@@ -7,7 +7,7 @@ import java.io.Serializable;
  *<p>Title:AjaxResponseBean.java</p>
  *<p>Description: 规范封装后台操作的结果信息，便于转换成json格式</p>
  *<p>Copyright:Copyright (c) 2010</p>
- *<p>Company:湖南科创</p>
+ *<p>Company:bboss</p>
  *@author 刘剑峰
  *@version 1.0
  *2011-4-19

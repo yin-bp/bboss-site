@@ -2,10 +2,10 @@ package org.frameworkset.web.utf8;
 
 /**
  * @Title: SimplEntity.java 
- * @Package com.chinacreator.demo.fromsubmint.entity
+ * @Package com.frameworkset.demo.fromsubmint.entity
  * @Description TODO(简单实体form测试时使用)  
  * @Copyright:Copyright (c) 2012
- * @Company: 湖南科创
+ * @Company: bboss
  * @author: yahui.hu 
  * @Date:2012-1-17
  */

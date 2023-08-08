@@ -1,27 +1,22 @@
 package org.frameworkset.web.utf8;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.frameworkset.util.annotations.ResponseBody;
 import org.frameworkset.web.multipart.MultipartFile;
 import org.frameworkset.web.multipart.MultipartHttpServletRequest;
 import org.frameworkset.web.servlet.ModelAndView;
+
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
  
 /**
  * 
  * @Title: FormSubmintController.java
- * @Package com.chinacreator.demo.Formsubmint.web
+ * @Package com.frameworkset.demo.Formsubmint.web
  * @Description TODO(表单例子控制器)
  * @Copyright:Copyright (c) 2012
- * @Company: 湖南科创
+ * @Company: bboss
  * @author: yahui.hu
  * @Date:2012-1-17
  */
