@@ -108,7 +108,7 @@
      <!-- 配置全局控制器方法拦截器 -->
      <property name="org.frameworkset.web.servlet.gloabel.HandlerInterceptors" >
      	<list componentType="bean">
-     		
+     		<property class="org.frameworkset.spi.mvc.DemoInterceptor"/>
      	</list>
      </property>
      
