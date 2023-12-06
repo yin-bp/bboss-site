@@ -22,12 +22,17 @@
 <%@ taglib prefix="tab" uri="/WEB-INF/tabpane-taglib.tld" %>	
 
 <% 
+    try{
 	String rootpath = request.getContextPath();
 	String selected = request.getParameter("selected");
 	String classType = request.getParameter("classType");
 	String nodePath = request.getParameter("nodePath");
-	BaseApplicationContext contextbase = BaseApplicationContext.getBaseApplicationContext(nodePath);
-	LinkConfigFile lnk = contextbase.getLinkConfigFile(selected);
+    BaseApplicationContext contextbase = null;
+    LinkConfigFile lnk = null;
+    if(nodePath != null && !nodePath.equals("")) {
+        contextbase = BaseApplicationContext.getBaseApplicationContext(nodePath);
+        lnk = contextbase.getLinkConfigFile(selected);
+    }
 	List list = null;
 	Map map = null;
 	Map pros = null;
@@ -47,10 +52,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		
-		<link rel="stylesheet" type="text/css" href="<%=rootpath%>/sysmanager/css/treeview.css">
 <%@ include file="/include/css.jsp"%>
-		<link rel="stylesheet" type="text/css" href="<%=rootpath%>/sysmanager/css/contentpage.css">
-		<link rel="stylesheet" type="text/css" href="<%=rootpath%>/sysmanager/css/tab.winclassic.css">
+
 		<tab:tabConfig/>	
 	</head>
 	
@@ -272,3 +275,9 @@
 	
 	</body>
 </html>
+<%
+    }
+    catch (Exception e){
+        e.printStackTrace();
+    }
+%>
