@@ -64,4 +64,7 @@
        <property name="indexLocation" value="E:\\lucene\\indexs\\book1\\index"/>
     </property>
 
+    <property name="/elasticsearch/*" class="org.frameworkset.spi.mvc.ElasticsearchKerberos"  singlable="true"/>
+        
+
 </properties>

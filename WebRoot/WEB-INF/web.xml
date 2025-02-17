@@ -97,6 +97,10 @@
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/rest/*</url-pattern>
 	</filter-mapping>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/elasticsearch/*</url-pattern>
+    </filter-mapping>
 	<filter>
 		<filter-name>securityFilter</filter-name>
 		<filter-class>org.frameworkset.web.interceptor.MyFirstAuthFilter</filter-class>
@@ -209,6 +213,10 @@
 		<servlet-name>mvcdispather</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mvcdispather</servlet-name>
+        <url-pattern>/elasticsearch/*</url-pattern>
+    </servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>mvcdispather</servlet-name>
 		<url-pattern>*.api</url-pattern>
